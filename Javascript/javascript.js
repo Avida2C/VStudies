@@ -129,4 +129,37 @@ c += 4; // c -= 4;
 // *= -= += /= can also be used 
 
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+function wordBlanks (myNoun, myAdjective, myVerb, myAdverb)
+{
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
+    
+    return result;
+
+}
+
+console.log(wordBlanks("dog", "big", "run", "quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+/* Array */ 
+
+var myArray1 = ["Nadine", 28];
+
+console.log(myArray1);
+//Nested Array 
+
+var myArray2 = [["Earth", 10],["Mars", 15]]; //2 element of Arrays in 1 Array
+
+console.log(myArray2);
+
+var myArray3 = [10,20,30];
+
+var myDataArray3 = myArray3[0];
+console.log(myDataArray3);
+
+var myArray4 = [10,20,30,40];
+myArray4[1] = 80;
+
+console.log(myArray4);

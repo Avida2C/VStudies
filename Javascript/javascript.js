@@ -1,3 +1,4 @@
+
 // My first in-line comment in my first javascript code!
 
 console.log("Hello World");
@@ -163,3 +164,13 @@ var myArray4 = [10,20,30,40];
 myArray4[1] = 80;
 
 console.log(myArray4);
+
+
+
+/* Functions */
+
+function welcomeAlert()
+{
+alert('Hi there~');
+alert('Welcome to the JavaScript study page, click OK to proceed and gain KNELEDGE!');
+}

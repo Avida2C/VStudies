@@ -77,11 +77,10 @@ console.log(myStr3);
 
 */
 
-
 var myStr4 = "FirstLine\n\tSecondLine\nThirdLine";
 console.log(myStr4);
 
-var myStr5 = "I come first. \n\t"+ "I come second.";
+var myStr5 = "I come first. \n\t" + "I come second.";
 myStr5 += "\n\t\t" + myStr1;
 
 console.log(myStr5);
@@ -91,7 +90,7 @@ console.log("Your sentence is " + myStrLength + " spaces long.");
 
 //programming languages do not start from 1, they start from 0, so the first letter is going to be 0, while the 2nd letter is 1.
 var firstLetterOfTheStr5 = myStr5[0];
-var lastLetterOfTheStr5 = myStr5[myStr5.length -1];
+var lastLetterOfTheStr5 = myStr5[myStr5.length - 1];
 
 
 console.log(firstLetterOfTheStr5); //this will display the first letter of the variable myStr5 which is 'I'
@@ -104,7 +103,6 @@ var helloWorld = "Jello World";
 helloWorld = "Hello World"; //this will change the text 
 
 
-
 /* Mathematics 
 + is addition
 - is subtraction
@@ -114,7 +112,7 @@ helloWorld = "Hello World"; //this will change the text
 
 var myVar = 0;
 //the following statements provide the same outcome
-myVar = myVar + 1; 
+myVar = myVar + 1;
 myVar++; //this is also possible using --
 
 //similar to whole numbers, decimal numbers are doable as well:
@@ -122,17 +120,13 @@ var myDecimalNumber = 1.5;
 
 //to find the remainder, % is used
 var remainder;
-remainder = 11 % 3; 
+remainder = 11 % 3;
 
 
 // += does the same thing as eg. e = e + 7; 
 var c;
 c += 4; // c -= 4;
-// *= -= += /= can be used 
+// *= -= += /= can also be used 
 
 
 /* -------------------------------------------------------------------------------------------------------- */
-
-
-
-

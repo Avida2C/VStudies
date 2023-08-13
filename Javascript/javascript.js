@@ -130,21 +130,7 @@ c += 4; // c -= 4;
 // *= -= += /= can also be used 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-function wordBlanks (myNoun, myAdjective, myVerb, myAdverb)
-{
-    var result = "";
-    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
-    
-    return result;
-
-}
-
-console.log(wordBlanks("dog", "big", "run", "quickly"));
-console.log(wordBlanks("bike", "slow", "flew", "slowly"));
-
-/* Array */ 
+/* Arrays */ 
 
 var myArray1 = ["Nadine", 28];
 
@@ -166,6 +152,15 @@ myArray4[1] = 80;
 console.log(myArray4);
 
 
+/* Statements 
+
+< = less than
+> = greater than
+|| = or 
+= = equal to
+! = not
+*/
+
 
 /* Functions */
 
@@ -174,3 +169,21 @@ function welcomeAlert()
 alert('Hi there~');
 alert('Welcome to the JavaScript study page, click OK to proceed and gain KNELEDGE!');
 }
+
+function wordBlanks (myNoun, myAdjective, myVerb, myAdverb)
+{
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
+    
+    return result;
+
+}
+
+/* Function Calls */
+
+console.log(wordBlanks("dog", "big", "run", "quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+/* Conversion 
+    parseFloat will convert string to number
+*/

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Studies</title>
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">JavaScript Studies</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Introduction</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tutorials
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="JavascriptTutorial00.html">Tutorial-01</a></li>
+                  <li><a class="dropdown-item" href="JavascriptTutorial01.html">Tutorial-02</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container pt-4">
+
+        <h1>JavaScript Tutorial-02</h1>
+        <div class="container pt-4">
+            <div class="w-100">
+                <h2> Easy Image change on Click</h2>
+                <img id="changeImg" class="imgSize mt-3" src="img/card-back.jpg" alt="flower" onclick="changeImg()">
+            </div>
+            <div class="d-flex pt-3">
+                <div class="w-50">
+                    <h2>JavaScript</h2>
+                    <p>
+                        function changeImg(){
+                        <br>
+                        document.getElementById("changeImg").src = "img/flowers.jpg";
+                        <br>
+                        }
+                    </p>
+                </div>
+                <div class="w-50">
+                    <H2>HTML</H2>
+                    <p> &lt;img id="changeImg" class="imgSize" src="img/card-back.jpg" alt="flower"
+                        onclick="changeImg()"&gt;
+                    </p>
+                </div>
+                <div class="w-50">
+                    <H2>CSS Properties</H2>
+                    <p>
+                        .imgSize {
+                        <BR>
+                        height: 250px;
+                        <BR>
+                        width:250px;
+                        <BR>
+                        object-fit:cover;
+                        <BR>
+                        }
+                    </p>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- BUTTONS --------------------------------------------------------------- -->
+
+            <div class="container pt-4">
+                <div class="w-100 pb-4">
+                    <h2>Color and text change </h2>
+                    <h1 onclick="blue()" class="pt-4" id="colourChangeText">Blue</h1>
+                    <button onclick="red()" type="button">Red</button>
+                    <button onclick="green()" type="button">Green</button>
+                </div>
+
+                <div class="d-flex pt-3">
+                    <div class="w-50">
+                        <h2>JavaScript</h2>
+                        <p class="scrollBoxStyle">
+                            function red() {
+                            console.log("Red");
+                            document.getElementById("colourChangeText").innerHTML = "Red";
+                            document.getElementById("colourChangeText").style.color = "red";
+                            }
+                        <br><br>
+                            function green() {    
+                            console.log("Green");
+                            document.getElementById("colourChangeText").innerHTML = "Green";
+                            document.getElementById("colourChangeText").style.color = "green"
+                            }
+                            <br><br>
+
+                            function blue() {
+                            console.log("Blue");
+                            document.getElementById("colourChangeText").innerHTML = "Blue";
+                            document.getElementById("colourChangeText").style.color = "blue";
+                            }
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <H2>HTML</H2>
+                        <p> &lt;h1 onclick="blue()" id="colourChangeText"&gt;Blue&lt;/h1&gt; <br>
+                            &lt;button onclick="red()" type="button"&gt;Red&lt;/button&gt;<br>
+                            &lt;button onclick="green()" type="button"&gt;Green&lt;/button&gt;
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <H2>CSS Properties</H2>
+                        <p>
+                            .scrollBoxStyle {
+                                <br>
+                                width: 400px;
+                                <br>
+                                height: 150px;
+                                <br>
+                                line-height: 1.5em;
+                                <br>
+                                overflow: scroll;
+                                <br>
+                                padding: 5px;
+                                <br>
+                            }
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <footer>
+                <div class="pb-4">
+
+                </div>
+            </footer>
+
+            <!-- JavaScript linked-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="Javascript/javascriptTutorial00.js"></script>
+            <script src="Javascript/javascriptTutorial01.js"></script>
+            <script src="Javascript/javascriptTutorial02.js"></script>
+
+            <!-- SCRIPTS SECTION -->
+
+
+</body>
+
+</html>

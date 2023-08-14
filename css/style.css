@@ -1,6 +1,13 @@
-.imgSize
-{
+.imgSize {
     height: 250px;
-    width:250px;
-    object-fit:cover;
+    width: 250px;
+    object-fit: cover;
+}
+
+.scrollBoxStyle {
+    width: 400px;
+    height: 150px;
+    line-height: 1.5em;
+    overflow: scroll;
+    padding: 5px;
 }

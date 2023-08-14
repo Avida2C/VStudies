@@ -16,22 +16,23 @@ console.error("Too fucking late, you're now gone, and I mean DEAD GONE!");
 
 //-------------- Some Interesting shit --------------
 
-//ID Header : string changed to Nadine Vidal
+/*ID Header : string changed to Nadine Vidal -this has been removed-
 document.getElementById("header").innerHTML = "Hello... welcome to your on going notes...";
 
-//input box value changes
+
+input box value changes -this has been removed-
 document.getElementById("inputBox").value = "Box";
 //show inputBox value in console
 console.log(document.getElementById("inputBox").value);
 
-/* 
+
 == : will check the value of the variables
 === : will check the value and the type of the variables
 != : will check if the value is not equal to the other
 !== : will check if the value and the type of the variables are NOT the same
-*/
 
-/* 
+
+
 && : And
 || : Or
 < : Less than

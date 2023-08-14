@@ -100,7 +100,7 @@
                 <div class="d-flex pt-3">
                     <div class="w-50">
                         <h2>JavaScript</h2>
-                        <p class="scrollBoxStyle">
+                        <p class="scrollTwoBoxStyle">
                             function red() {
                             console.log("Red");
                             document.getElementById("colourChangeText").innerHTML = "Red";
@@ -128,27 +128,43 @@
                             &lt;button onclick="green()" type="button"&gt;Green&lt;/button&gt;
                         </p>
                     </div>
-                    <div class="w-50">
-                        <H2>CSS Properties</H2>
-                        <p>
-                            .scrollBoxStyle {
-                                <br>
-                                width: 400px;
-                                <br>
-                                height: 150px;
-                                <br>
-                                line-height: 1.5em;
-                                <br>
-                                overflow: scroll;
-                                <br>
-                                padding: 5px;
-                                <br>
-                            }
-                        </p>
-                    </div>
-
                 </div>
+<!-- --------------------------------------------------------------- BUTTONS --------------------------------------------------------------- -->
+<div class="container pt-4">
+    <div class="w-100 pb-4">
+        <h2>Color on input</h2>
+        <h1 id="myText">Hello!</h1>
+        <p>Please input a colour!</p>
+        <input type="text" id="userInput">
+        <button onclick="btnClick()" type="button">Enter</button>
+    </div>
 
+    <div class="d-flex pt-3">
+        <div class="w-50">
+            <h2>JavaScript</h2>
+            <p class="scrollTwoBoxStyle">
+                function btnClick() {<br>
+                    var text = document.getElementById("userInput").value;
+                    <br>
+                    document.getElementById("myText").style.color = text;<br><br>
+                    if (text != document.getElementById("myText").style.color){
+                        <br>
+                        document.getElementById("myText").style.color = "black";
+                        <br>
+                    }<br>
+                }
+        </div>
+        <div class="w-50">
+            <H2>HTML</H2>
+            <p> &lt;h1 id="myText">Hello!&lt;/h1&gt;<br>
+                &lt;p>Please input a colour!&lt;/p&gt;<br>
+                &lt;input type="text" id="userInput"&gt;<br>
+                &lt;button onclick="btnClick()" type="button"&gt;Enter&lt;/button&gt;
+                
+            </p>
+        </div>
+        </div>
+    </div>
 
 
             </div>

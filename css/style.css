@@ -4,8 +4,16 @@
     object-fit: cover;
 }
 
-.scrollBoxStyle {
+.scrollThreeBoxStyle {
     width: 400px;
+    height: 150px;
+    line-height: 1.5em;
+    overflow: scroll;
+    padding: 5px;
+}
+
+.scrollTwoBoxStyle {
+    width: 600px;
     height: 150px;
     line-height: 1.5em;
     overflow: scroll;

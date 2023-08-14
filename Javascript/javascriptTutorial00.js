@@ -71,3 +71,28 @@ function blue() {
     //changes color text to blue
     document.getElementById("colourChangeText").style.color = "blue";
 }
+
+function btnClick() {
+    var text = document.getElementById("userInput").value;
+    
+    document.getElementById("myText").style.color = text;
+    if (text != document.getElementById("myText").style.color)
+    {
+        document.getElementById("myText").style.color = "black";
+    }
+
+
+    /*if (text === "red") {
+        document.getElementById("myText").style.color = ("red");
+    }
+    else if(text === "green"){
+        document.getElementById("myText").style.color = ("green");
+    }
+    else if(text === "blue")
+    {
+        document.getElementById("myText").style.color = ("blue");
+    }
+    else
+    {
+        document.getElementById("myText").style.color = ("black");*/
+}

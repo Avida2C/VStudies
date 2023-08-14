@@ -159,7 +159,7 @@ console.log(myArray4);
 < = less than
 > = greater than
 || = or 
-= = equal to
+== equal to
 ! = not
 */
 

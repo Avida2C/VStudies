@@ -39,3 +39,34 @@ console.log(document.getElementById("inputBox").value);
 = : Equal to
 */
 
+function changeImg() {
+    document.getElementById("changeImg").src = "img/flowers.jpg";
+}
+
+
+function red() {
+    //display text in console
+    console.log("Red");
+    //changes text to "red"
+    document.getElementById("colourChangeText").innerHTML = "Red";
+    //changes color text to red
+    document.getElementById("colourChangeText").style.color = "red";
+}
+
+function green() {
+    //display text in console
+    console.log("Green");
+    //changes text to "green"
+    document.getElementById("colourChangeText").innerHTML = "Green";
+    //changes color text to green
+    document.getElementById("colourChangeText").style.color = "green"
+}
+
+function blue() {
+    //display text in console
+    console.log("Blue");
+    //changes text to "blue"
+    document.getElementById("colourChangeText").innerHTML = "Blue";
+    //changes color text to blue
+    document.getElementById("colourChangeText").style.color = "blue";
+}

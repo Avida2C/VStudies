@@ -143,11 +143,28 @@ function checkAgeCalculator() {
 
 function counterLoop() {
     var i = 0;
-    while (i <= 9) {
+    while (i <= 15) {
         i++;
         console.log(i);
         document.getElementById("counterLoop").innerHTML += i + " ";
+        if (i == 10) {
+
+            break;
+
+        }
 
     }
+
+}
+
+function whileArray() {
+    var loopArray = [];
+    var i = 0;
+
+    while (i <= 50) {
+        loopArray.push(i);
+        i++;
+    }
+    document.getElementById("whileArray").innerHTML = loopArray;
 
 }

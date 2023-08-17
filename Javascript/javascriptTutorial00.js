@@ -10,9 +10,11 @@ console.log("Hello");
 
 //To Create a warning message 
 console.warn("Your shit is on fire...");
+//console.warn("WARNING: Fart incoming!");
 
 //To create an error message 
 console.error("Too fucking late, you're now gone, and I mean DEAD GONE!");
+//console.error("ERROR: Oops... it was more than just a fart...");
 
 //-------------- Some Interesting shit --------------
 
@@ -74,13 +76,14 @@ function blue() {
 
 function btnClick() {
     var text = document.getElementById("userInput").value;
-    
+
     document.getElementById("myText").style.color = text;
-    if (text != document.getElementById("myText").style.color)
-    {
+    if (text != document.getElementById("myText").style.color) {
         document.getElementById("myText").style.color = "black";
     }
 
+    /*does the same thing as the previous code, difference is: 
+    it is much more limited due to the if and else statements*/
 
     /*if (text === "red") {
         document.getElementById("myText").style.color = ("red");
@@ -95,4 +98,56 @@ function btnClick() {
     else
     {
         document.getElementById("myText").style.color = ("black");*/
+}
+
+/* The Switch method is similar to if, if else and else statements, 
+but it is much easier to use and read */
+
+function guestButton() {
+    var guestColor = document.getElementById("guestInput").value;
+    guestOutput = guestColor.toLowerCase();
+
+    console.log(guestOutput);
+
+    switch (guestOutput) {
+        case "red":
+            document.getElementById("guestText").style.color = "red";
+            break;
+        case "green":
+            document.getElementById("guestText").style.color = "green";
+            break;
+        case "blue":
+            document.getElementById("guestText").style.color = "blue";
+            break;
+        default:
+            document.getElementById("guestText").style.color = "black";
+    }
+}
+
+
+function checkAgeCalculator() {
+    var stringAge = document.getElementById("inputAge").value;
+    numAge = parseInt(stringAge);
+
+    if (numAge != isNaN, numAge <= 17) {
+        document.getElementById("ageResult").innerHTML = "Not Adult";
+    } else if (numAge != isNaN, numAge >= 18, numAge <= 89) {
+        document.getElementById("ageResult").innerHTML = "Is Adult";
+    } else if (numAge >= 90) {
+        document.getElementById("ageResult").innerHTML = "Accient!";
+    } else {
+        document.getElementById("ageResult").innerHTML = "Incorrect!";
+    }
+
+}
+
+function counterLoop() {
+    var i = 0;
+    while (i <= 9) {
+        i++;
+        console.log(i);
+        document.getElementById("counterLoop").innerHTML += i + " ";
+
+    }
+
 }

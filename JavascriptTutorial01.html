@@ -17,39 +17,40 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand">JavaScript Studies</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Introduction</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tutorials
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="JavascriptTutorial00.html">Tutorial-01</a></li>
-                  <li><a class="dropdown-item" href="JavascriptTutorial01.html">Tutorial-02</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <a class="navbar-brand">JavaScript Studies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Introduction</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="javaScriptDictionary.html">Dictionary</a></li>
+                            <li><a class="dropdown-item" href="JavascriptTutorial01.html">Tutorial-02</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
 
     <div class="container pt-4">
 
-        <h1>JavaScript Tutorial-02</h1>
+        <h1>JavaScript Tutorial-01</h1>
         <div class="container pt-4">
             <div class="w-100">
                 <h2> Easy Image change on Click</h2>
@@ -106,8 +107,8 @@
                             document.getElementById("colourChangeText").innerHTML = "Red";
                             document.getElementById("colourChangeText").style.color = "red";
                             }
-                        <br><br>
-                            function green() {    
+                            <br><br>
+                            function green() {
                             console.log("Green");
                             document.getElementById("colourChangeText").innerHTML = "Green";
                             document.getElementById("colourChangeText").style.color = "green"
@@ -129,42 +130,131 @@
                         </p>
                     </div>
                 </div>
-<!-- --------------------------------------------------------------- BUTTONS --------------------------------------------------------------- -->
-<div class="container pt-4">
-    <div class="w-100 pb-4">
-        <h2>Color on input</h2>
-        <h1 id="myText">Hello!</h1>
-        <p>Please input a colour!</p>
-        <input type="text" id="userInput">
-        <button onclick="btnClick()" type="button">Enter</button>
-    </div>
+                <!-- --------------------------------------------------------------- BUTTONS --------------------------------------------------------------- -->
+                <div class="container pt-4">
+                    <div class="w-100 pb-4">
+                        <h2>Colour on input - IF, IF ELSE and ELSE </h2>
+                        <h1 id="myText">Hello!</h1>
+                        <p>Please input a colour!</p>
+                        <input type="text" id="userInput">
+                        <button onclick="btnClick()" type="button">Enter</button>
+                    </div>
 
-    <div class="d-flex pt-3">
-        <div class="w-50">
-            <h2>JavaScript</h2>
-            <p class="scrollTwoBoxStyle">
-                function btnClick() {<br>
-                    var text = document.getElementById("userInput").value;
-                    <br>
-                    document.getElementById("myText").style.color = text;<br><br>
-                    if (text != document.getElementById("myText").style.color){
-                        <br>
-                        document.getElementById("myText").style.color = "black";
-                        <br>
-                    }<br>
-                }
-        </div>
-        <div class="w-50">
-            <H2>HTML</H2>
-            <p> &lt;h1 id="myText">Hello!&lt;/h1&gt;<br>
-                &lt;p>Please input a colour!&lt;/p&gt;<br>
-                &lt;input type="text" id="userInput"&gt;<br>
-                &lt;button onclick="btnClick()" type="button"&gt;Enter&lt;/button&gt;
-                
-            </p>
-        </div>
-        </div>
-    </div>
+                    <div class="d-flex pt-3">
+                        <div class="w-50">
+                            <h2>JavaScript</h2>
+                            <p class="scrollTwoBoxStyle">
+                                function btnClick() {<br>
+                                var text = document.getElementById("userInput").value;
+                                <br>
+                                document.getElementById("myText").style.color = text;<br><br>
+                                if (text != document.getElementById("myText").style.color){
+                                <br>
+                                document.getElementById("myText").style.color = "black";
+                                <br>
+                                }<br>
+                                <br>
+                                <br>/*does the same thing as the previous code, difference is:
+                                it is much more limited due to the if and else statements:
+                                <br>
+                                <br>
+                                if (text === "red") {
+                                <br> document.getElementById("myText").style.color = ("red");
+                                <br>}
+                                <br>else if(text === "green"){
+                                <br> document.getElementById("myText").style.color = ("green");
+                                <br>}
+                                <br>else if(text === "blue")
+                                <br> {
+                                <br> document.getElementById("myText").style.color = ("blue");
+                                <br> }
+                                <br> else
+                                <br> {
+                                <br> document.getElementById("myText").style.color = ("black");
+                                <br> }*/
+                                <br>}
+
+
+                        </div>
+                        <div class="w-50">
+                            <H2>HTML</H2>
+                            <p> &lt;h1 id="myText">Hello!&lt;/h1&gt;<br>
+                                &lt;p>Please input a colour!&lt;/p&gt;<br>
+                                &lt;input type="text" id="userInput"&gt;<br>
+                                &lt;button onclick="btnClick()" type="button"&gt;Enter&lt;/button&gt;
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------- Switch Command --------------------------------------->
+
+                <div class="container pt-4">
+                    <div class="w-100 pb-4">
+                        <h2>On Switch</h2>
+                        <h1 id="guestText">Hello Guest!
+                        </h1>
+                        <p>Please input a colour!</p>
+                        <input type="text" id="guestInput">
+                        <button type="button" onclick="guestButton()">Change</button>
+                    </div>
+
+                    <div class="d-flex pt-3">
+                        <div class="w-50">
+                            <h2>JavaScript</h2>
+                            <p class="scrollTwoBoxStyle">
+                                function guestButton() {
+                                <br>var guestColor = document.getElementById("guestInput").value;
+                                <br>guestOutput = guestColor.toLowerCase();
+                                <br>
+                                <br>console.log(guestOutput);
+                                <br><br>
+                                switch (guestOutput) {
+                                <br> case "red":
+                                <br> document.getElementById("guestText").style.color = "red";
+                                <br> break;
+                                <br> case "green":
+                                <br> document.getElementById("guestText").style.color = "green";
+                                <br> break;
+                                <br> case "blue":
+                                <br> document.getElementById("guestText").style.color = "blue";
+                                <br> break;
+                                <br> default:
+                                <br> document.getElementById("guestText").style.color = "black";
+                                <br> }
+                                <br> }
+                        </div>
+                        <div class="w-50">
+                            <H2>HTML</H2>
+                            &lt;h1> id="guestText">Hello Guest! &lt;/h1>
+                            <br>&lt;p>Please input a colour!&lt;/p>
+                            <br>&lt;input type="text" id="guestInput">
+                            <br> &lt;button type="button" onclick="guestButton()">Change&lt;/button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----------------------------  --------------------------------------->
+
+                <div class="container">
+                    <h2>Age Checker - IF, IF ELSE, ELSE</h2>
+
+                    <h1>How old are you?</h1>
+                    <p>Please input a number:</p>
+                    <input type="text" id="inputAge">
+                    <p id="ageResult"></p>
+                    <button type="button" onclick="checkAgeCalculator()">Check</button>
+
+                </div>
+
+                <!-----------------------------  --------------------------------------->
+
+                <div class="container">
+                    <h1>While Loop</h1>
+                    <p id="counterLoop"> </p>
+                    
+                </div>
 
 
             </div>
@@ -183,7 +273,12 @@
 
             <!-- SCRIPTS SECTION -->
 
+            <script>
+                counterLoop();
+            </script>
 
+        </div>
+    </div>
 </body>
 
 </html>

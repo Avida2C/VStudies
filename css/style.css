@@ -4,6 +4,28 @@
     object-fit: cover;
 }
 
+.referenceStyle th
+{
+    border: 1px solid black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.referenceStyle h3
+    {
+        color: red;
+        font-size:larger;
+
+}
+
+.referenceStyle table
+{
+    width: 100%;
+}
+
 .scrollThreeBoxStyle {
     width: 400px;
     height: 150px;
@@ -19,3 +41,4 @@
     overflow: scroll;
     padding: 5px;
 }
+

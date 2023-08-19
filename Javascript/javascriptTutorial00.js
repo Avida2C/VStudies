@@ -43,7 +43,26 @@ console.log(document.getElementById("inputBox").value);
 */
 
 function changeImg() {
-    document.getElementById("changeImg").src = "img/flowers.jpg";
+
+    imageSource = document.getElementById("changeImg").src;
+
+    if(imageSource.includes ("img/card-back.jpg"))
+    {
+        document.getElementById("changeImg").src = ("img/flowers.jpg");
+    }
+    else if  (imageSource.includes ("img/flowers.jpg"))
+    {
+        document.getElementById ("changeImg").src = ("img/tulips.jpg");
+    }
+    else if  (imageSource.includes ("img/tulips.jpg"))
+    {
+        document.getElementById ("changeImg").src = ("img/butterfly.jpg");
+    }
+    else
+    {
+        document.getElementById("changeImg").src = ("img/card-back.jpg");
+    }
+     
 }
 
 
@@ -76,9 +95,10 @@ function blue() {
 
 function btnClick() {
     var text = document.getElementById("userInput").value;
+    textToLow = text.toLowerCase();
 
-    document.getElementById("myText").style.color = text;
-    if (text != document.getElementById("myText").style.color) {
+    document.getElementById("myText").style.color = textToLow;
+    if (textToLow != document.getElementById("myText").style.color) {
         document.getElementById("myText").style.color = "black";
     }
 
@@ -166,5 +186,46 @@ function whileArray() {
         i++;
     }
     document.getElementById("whileArray").innerHTML = loopArray;
+
+}
+
+var thumbnailInterval;
+
+function thumbnailTest()
+{ 
+    
+
+    thumbnailInterval = setInterval(() => {
+
+        var imageSource = document.getElementById("thumbnailTest").src;
+
+        if(imageSource.includes ("img/flowers.jpg"))
+        {
+            document.getElementById("thumbnailTest").src = "img/card-back.jpg";
+        }
+        else if(imageSource.includes("img/card-back.jpg") )
+        {
+            document.getElementById("thumbnailTest").src = "img/tulips.jpg";
+        }
+        else if(imageSource.includes("img/tulips.jpg"))
+        {
+            document.getElementById("thumbnailTest").src = "img/butterfly.jpg";
+        }
+        else
+        {
+            document.getElementById("thumbnailTest").src = "img/flowers.jpg";
+        }
+              
+    }, 600);
+
+}
+    
+
+
+function thumbnailDefault()
+{
+    clearInterval(thumbnailInterval);
+
+    document.getElementById("thumbnailTest").src = "img/card-back.jpg";
 
 }

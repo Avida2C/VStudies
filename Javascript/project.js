@@ -34,8 +34,6 @@ const SYMBOLS_VALUES = {
     "D": 2
 }
 
-
-
 /* -------------- FUNCTIONS -------------- */
 
 //The following is a function work similarly to: function deposit () {}

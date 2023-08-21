@@ -238,23 +238,16 @@ function changeImg() {
 
     imageSource = document.getElementById("changeImg").src;
 
-    if(imageSource.includes ("img/card-back.jpg"))
-    {
+    if (imageSource.includes("img/card-back.jpg")) {
         document.getElementById("changeImg").src = ("img/flowers.jpg");
-    }
-    else if  (imageSource.includes ("img/flowers.jpg"))
-    {
-        document.getElementById ("changeImg").src = ("img/tulips.jpg");
-    }
-    else if  (imageSource.includes ("img/tulips.jpg"))
-    {
-        document.getElementById ("changeImg").src = ("img/butterfly.jpg");
-    }
-    else
-    {
+    } else if (imageSource.includes("img/flowers.jpg")) {
+        document.getElementById("changeImg").src = ("img/tulips.jpg");
+    } else if (imageSource.includes("img/tulips.jpg")) {
+        document.getElementById("changeImg").src = ("img/butterfly.jpg");
+    } else {
         document.getElementById("changeImg").src = ("img/card-back.jpg");
     }
-     
+
 }
 
 
@@ -383,39 +376,50 @@ function whileArray() {
 
 var thumbnailInterval;
 
-function thumbnailTest()
-{ 
-    
+function thumbnailTest() {
+
 
     thumbnailInterval = setInterval(() => {
 
         var imageSource = document.getElementById("thumbnailTest").src;
 
-        if(imageSource.includes ("img/flowers.jpg"))
-        {
+        if (imageSource.includes("img/flowers.jpg")) {
             document.getElementById("thumbnailTest").src = "img/card-back.jpg";
-        }
-        else if(imageSource.includes("img/card-back.jpg") )
-        {
+        } else if (imageSource.includes("img/card-back.jpg")) {
             document.getElementById("thumbnailTest").src = "img/tulips.jpg";
-        }
-        else if(imageSource.includes("img/tulips.jpg"))
-        {
+        } else if (imageSource.includes("img/tulips.jpg")) {
             document.getElementById("thumbnailTest").src = "img/butterfly.jpg";
-        }
-        else
-        {
+        } else {
             document.getElementById("thumbnailTest").src = "img/flowers.jpg";
         }
-              
+
     }, 600);
 
 }
-   
-function thumbnailDefault()
-{
+
+function thumbnailDefault() {
     clearInterval(thumbnailInterval);
 
     document.getElementById("thumbnailTest").src = "img/card-back.jpg";
 
+}
+
+function display(val) {
+    val = document.getElementById("calculatorInput").value += val;
+
+
+    console.log(val);
+}
+
+function calculate() {
+    x = document.getElementById("calculatorInput").value;
+    y = eval(x);
+
+    document.getElementById("calculatorInput").value = y;
+
+
+}
+
+function clearCalc() {
+    document.getElementById("calculatorInput").value = " ";
 }

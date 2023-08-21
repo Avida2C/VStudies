@@ -24,8 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="introductionJavaScript.html">Introduction</a>
+                        <a class="nav-link active" aria-current="page" href="javaScriptIntro.html">Intro:JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="phpIntro.html">Intro:PHP</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -33,8 +35,8 @@
                             Tutorials
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="JavascriptTutorial01.html">Tutorial-01</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="javaScriptTutorial.html">JavaScript</a></li>
+                            <li><a class="dropdown-item" href="phpTutorial.html">PHP</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
@@ -57,10 +59,10 @@
                 <img id="changeImg" class="imgSize mt-3" src="img/card-back.jpg" alt="flower" onclick="changeImg()">
             </div>
 
-            <div class="d-flex pt-3">
+            <div class="d-flex pt-3 codeSection">
                 <div class="w-50">
                     <h2>JavaScript</h2>
-                    <p class="scrollThreeBoxStyle">
+                    <p>
                         function changeImg() {
                         <br>
                         <br> imageSource = document.getElementById("changeImg").src;
@@ -115,10 +117,10 @@
                     <button onclick="green()" type="button">Green</button>
                 </div>
 
-                <div class="d-flex pt-3">
+                <div class="d-flex pt-3 codeSection">
                     <div class="w-50">
                         <h2>JavaScript</h2>
-                        <p class="scrollTwoBoxStyle">
+                        <p>
                             function red() {
                             console.log("Red");
                             document.getElementById("colourChangeText").innerHTML = "Red";
@@ -157,10 +159,10 @@
                         <button onclick="btnClick()" type="button">Enter</button>
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 function btnClick() {<br>
                                 var text = document.getElementById("userInput").value;
                                 <br>
@@ -216,10 +218,10 @@
                         <button type="button" onclick="guestButton()">Change</button>
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 function guestButton() {
                                 <br>var guestColor = document.getElementById("guestInput").value;
                                 <br>guestOutput = guestColor.toLowerCase();
@@ -266,10 +268,10 @@
                         <button type="button" onclick="checkAgeCalculator()">Check</button>
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 function checkAgeCalculator() {
                                 <br> var stringAge = document.getElementById("inputAge").value;
                                 <br> numAge = parseInt(stringAge);
@@ -308,10 +310,10 @@
 
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 function counterLoop() {
                                 <br> var i = 0;
                                 <br>while (i &lt;= 15) {
@@ -344,10 +346,10 @@
 
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 function whileArray() {
                                 <br> var loopArray = [];
                                 <br> var i = 0;
@@ -382,10 +384,10 @@
 
                     </div>
 
-                    <div class="d-flex pt-3">
+                    <div class="d-flex pt-3 codeSection">
                         <div class="w-50">
                             <h2>JavaScript</h2>
-                            <p class="scrollTwoBoxStyle">
+                            <p>
                                 var thumbnailInterval;
                                 <br>
                                 <br>function thumbnailTest(){
@@ -429,8 +431,129 @@
                         </div>
                     </div>
                 </div>
+                <!-------------------------CALCULATOR---------------------------->
 
+                <div class="container pt-4">
+                    <div class="w-100 pb-4">
+                        <h2>Calculator</h2>
+                        <div class="calculator">
+                            <input class="calculatorInput" type="text" id="calculatorInput" readonly>
 
+                            <button type="button" class="clearCalc" value="C" onclick="clearCalc()">C</button>
+
+                            <button type="button" value="7" onclick="display('7')">7</button>
+                            <button type="button" value="8" onclick="display('8')">8</button>
+                            <button type="button" value="9" onclick="display('9')">9</button>
+
+                            <button type="button" value="4" onclick="display('4')">4</button>
+                            <button type="button" value="5" onclick="display('5')">5</button>
+                            <button type="button" value="6" onclick="display('6')">6</button>
+
+                            <button type="button" value="1" onclick="display('1')">1</button>
+                            <button type="button" value="2" onclick="display('2')">2</button>
+                            <button type="button" value="3" onclick="display('3')">3</button>
+
+                            <button type="button" value="." onclick="display('.')">.</button>
+                            <button type="button" value="0" onclick="display('0')">0</button>
+                            <button type="button" value="/" onclick="display('/')">/</button>
+                            <button type="button" value="+" onclick="display('+')">+</button>
+                            <button type="button" value="-" onclick="display('-')">-</button>
+                            <button type="button" value="*" onclick="display('*')">*</button>
+                            <button type="button" class="calculateBtn" value="="
+                                onclick="calculate()">Calculate</button>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex pt-3 codeSection">
+                        <div class="w-50">
+                            <h2>JavaScript</h2>
+                            <p>
+                                function display(val){
+                                <br> val = document.getElementById("calculatorInput").value += val;
+                                <br>
+                                <br>console.log(val);
+
+                                <br> }
+                                <br>
+                                <br> function calculate(){
+                                <br> x = document.getElementById("calculatorInput").value;
+                                <br> y = eval(x);
+                                <br>
+                                <br> document.getElementById("calculatorInput").value = y;
+                                <br> }
+                                <br>
+                                <br> function clearCalc(){
+                                <br> document.getElementById("calculatorInput").value = " ";
+                                <br> }
+                            </p>
+                        </div>
+
+                        <div class="w-50">
+                            <H2>HTML</H2>
+                            <p class="scrollThreeBoxStyle"> &lt;img id="changeImg" class="imgSize"
+                                src="img/card-back.jpg" alt="flower"
+                                &lt;div class="calculator">
+                                <br> &lt;input class="calculatorInput" type="text" id="calculatorInput" readonly>
+
+                                <br> &lt;button type="button" class="clearCalc" value="C"
+                                onclick="clearCalc()">C&lt;/button>
+
+                                <br> &lt;button type="button" value="7" onclick="display('7')">7&lt;/button>
+                                <br> &lt;button type="button" value="8" onclick="display('8')">8&lt;/button>
+                                <br> &lt;button type="button" value="9" onclick="display('9')">9&lt;/button>
+                                <br> &lt;button type="button" value="4" onclick="display('4')">4&lt;/button>
+                                <br> &lt;button type="button" value="5" onclick="display('5')">5&lt;/button>
+                                <br> &lt;button type="button" value="6" onclick="display('6')">6&lt;/button>
+                                <br> &lt;button type="button" value="1" onclick="display('1')">1&lt;/button>
+                                <br> &lt;button type="button" value="2" onclick="display('2')">2&lt;/button>
+                                <br> &lt;button type="button" value="3" onclick="display('3')">3&lt;/button>
+                                <br> &lt;button type="button" value="." onclick="display('.')">.&lt;/button>
+                                <br> &lt;button type="button" value="0" onclick="display('0')">0&lt;/button>
+                                <br> &lt;button type="button" value="/" onclick="display('/')">/&lt;/button>
+                                <br> &lt;button type="button" value="+" onclick="display('+')">+&lt;/button>
+                                <br> &lt;button type="button" value="-" onclick="display('-')">-&lt;/button>
+                                <br> &lt;button type="button" value="*" onclick="display('*')">*&lt;/button>
+                                <br> &lt;button type="button" class="calculateBtn" value="="
+                                onclick="calculate()">Calculate&lt;/button>
+                                <br> &lt;/div>
+                                <br> &lt;/p>
+                        </div>
+                        <div class="w-50">
+                            <H2>CSS Properties</H2>
+                            <p class="scrollThreeBoxStyle">
+                                div .calculator {
+                                <br> width: 350px;
+                                <br> padding: 0.5em;
+                                <br> background-color: rgb(31, 31, 31);
+                                <br> }
+                                <br>
+                                <br> .calculator button {
+                                <br> width: 32.3%;
+                                <br> padding: 1em;
+                                <br> }
+                                <br>
+                                <br> .calculator .calculatorInput {
+                                <br> width: 72%;
+                                <br> padding: 1em;
+                                <br> margin-bottom: 0.5em;
+                                <br> }
+                                <br>
+
+                                <br> .calculator .calculateBtn {
+                                <br> width: 100%;
+                                <br> padding: 1em;
+                                <br> margin-top: 0.5em;
+                                <br> }
+                                <br>
+                                <br> .calculator .clearCalc {
+                                <br> width: 26%;
+                                <br> }
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <footer>

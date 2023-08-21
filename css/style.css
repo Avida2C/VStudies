@@ -1,44 +1,86 @@
+div .calculator {
+    width: 350px;
+    padding: 0.5em;
+    background-color: rgb(255, 0, 85);
+}
+
+.calculator button {
+    width: 32.3%;
+    padding: 1em;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    border: 0.1em solid;
+    
+}
+
+.calculator .calculatorInput {
+    width: 72%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border: 0.1em solid white;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 16px;
+}
+
+.calculator .calculateBtn {
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    font-weight: Bold;
+    font-size: large;
+}
+
+.calculator .clearCalc {
+    width: 26%;
+
+}
+
+.codeSection
+{
+    margin-top: 1em;
+    background-color: rgb(255, 0, 85);
+    padding: 2em;
+}
+
+.codeSection div
+{
+    width: 300px;
+}
+
+.codeSection h2
+{
+    text-align: center;
+    width: 300px;
+}
+
+.codeSection p
+{
+    padding: 1em;;
+    overflow:auto;
+    height: 200px;
+    margin-right: 0.5em;
+}
+
 .imgSize {
     height: 250px;
     width: 250px;
     object-fit: cover;
 }
 
-.referenceStyle th
-{
+.referenceStyle th {
     border: 1px solid black;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
-    
 }
 
-.referenceStyle h3
-    {
-        color: red;
-        font-size:larger;
-
+.referenceStyle h3 {
+    color: red;
+    font-size: larger;
 }
 
-.referenceStyle table
-{
+.referenceStyle table {
     width: 100%;
 }
-
-.scrollThreeBoxStyle {
-    width: 400px;
-    height: 150px;
-    line-height: 1.5em;
-    overflow: scroll;
-    padding: 5px;
-}
-
-.scrollTwoBoxStyle {
-    width: 600px;
-    height: 150px;
-    line-height: 1.5em;
-    overflow: scroll;
-    padding: 5px;
-}
-

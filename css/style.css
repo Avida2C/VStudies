@@ -1,3 +1,27 @@
+footer{
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+}
+
+footer p
+{
+ font-weight: 200;
+}
+
+nav a{
+    font-weight: 300;
+}
+
+nav{
+    font-weight: 200;
+    align-items: center;
+}
+
+/* Class Types */
 div .calculator {
     width: 350px;
     padding: 0.5em;

@@ -856,6 +856,111 @@
                     </th>
                 </tr>
             </table>
+
+            <h2>PHP - SuperGlobal Variables</h2>
+            <table>
+                    <tr>
+                        <th>
+                            <h3>Name</h3>
+                        </th>
+                        <th>
+                            <h3>Definition</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $GLOBALS
+                        </th>
+                        <th>
+                            used to access global variables from anywhere in the PHP script.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_SERVER
+                        </th>
+                        <th>
+                            holds information about headers, paths, and script locations.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_REQUEST
+                        </th>
+                        <th>
+                            used to collect data after submitting an HTML form.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_POST
+                        </th>
+                        <th>
+                            used to collect form data after submitting an HTML form with method="post". $_POST is also
+                            widely used to pass variables.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_GET
+                        </th>
+                        <th>
+                            used to collect form data after submitting an HTML form with method="get".
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_FILES
+                        </th>
+                        <th>
+                            used to associate array items that are uploaded through the HTTP POST method.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_ENV
+                        </th>
+                        <th>
+                            used to access environment variables.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_COOKIE
+                        </th>
+                        <th>
+                            used to access a cookie value.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            $_SESSION
+                        </th>
+                        <th>
+                            used to temporarily store and make data accessible across all the website pages.
+                        </th>
+                    </tr>
+                </table>
+
+                <h2>PHP - Useful References</h2>
+                <table class="tableStyle">
+                    <tr>
+                        <th>
+                            <h3>Code</h3> 
+                        </th>
+                        <th>
+                           <h3>Definition </h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        implode()
+                        </th>
+                        <th>
+                            Converts data to string
+                        </th>
+                    </tr>
+                </table>
 </div>
         </div>
 

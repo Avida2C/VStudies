@@ -21,7 +21,7 @@
 
             <div class="formCenter">
 
-                <form class="formStyle" action="post">
+                <form class="loginStyle" action="post">
                     <h3>Admin Login</h3>
                     <label for="username"> Username</label>
                     <input type="username" name="username" placeholder="Username">

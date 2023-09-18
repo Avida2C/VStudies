@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="intro.php">Introduction</a>
+                <a class="nav-link active" aria-current="page" href="javascriptNotes.php">Javascript</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="regEx.php">RegEx</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="javaScriptTutorial.php">Tutorial</a>
+                <a class="nav-link active" aria-current="page" href="phpNotes.php">PHP</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>

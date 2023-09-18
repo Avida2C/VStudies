@@ -1,8 +1,8 @@
-body{
-    overflow: scroll; 
+body {
+    overflow: scroll;
 }
 
-footer{
+footer {
     padding: 1em;
     margin-top: 2em;
     text-align: center;
@@ -12,16 +12,15 @@ footer{
     justify-content: end;
 }
 
-footer p
-{
- font-weight: 200;
+footer p {
+    font-weight: 200;
 }
 
-nav a{
+nav a {
     font-weight: 300;
 }
 
-nav{
+nav {
     font-weight: 200;
     align-items: center;
 }
@@ -39,7 +38,7 @@ div .calculator {
     background-color: rgb(26, 26, 26);
     color: rgb(255, 255, 255);
     border: 0.1em solid;
-    
+
 }
 
 .calculator .calculatorInput {
@@ -65,61 +64,58 @@ div .calculator {
 
 }
 
-.codeSection
-{
+.codeSection {
     margin-top: 1em;
     background-color: rgb(255, 0, 85);
     padding: 2em;
 }
 
-.codeSection div
-{
+.codeSection div {
     width: 300px;
 }
 
-.codeSection h2
-{
+.codeSection h2 {
     text-align: center;
     width: 300px;
 }
 
-.codeSection p
-{
-    padding: 1em;;
-    overflow:auto;
+.codeSection p {
+    padding: 1em;
+    ;
+    overflow: auto;
     height: 200px;
     margin-right: 0.5em;
 }
 
-.formCenter
-{
+.formCenter {
     display: flex;
     justify-content: center;
     white-space: pre-line;
 }
 
-.formStyle
-{
+.loginStyle {
     width: 600px;
     margin: 2em;
 }
-.formStyle h3
-{
+
+.loginStyle h3 {
     margin: 0px;
     padding: 0px;
 }
 
-.formStyle input{
+.loginStyle input {
     padding: 0.4em;
     margin-bottom: 1em;
     width: 100%;
     border: 1px solid rgb(195, 195, 195);
     border-radius: 1px;
 }
-.formStyle ::placeholder{
+
+.loginStyle ::placeholder {
     color: rgb(217, 217, 217);
 }
-.formStyle button{
+
+.loginStyle button {
     padding: 0.4em;
     width: 25%;
     float: right;
@@ -134,25 +130,27 @@ div .calculator {
     object-fit: cover;
 }
 
-.indexStyle{
-    background-color:rgb(255, 0, 85);
-    color: rgb(242, 242, 242);
+.indexStyle {
+    background-color: rgb(255, 0, 85);
+    color: rgb(255, 255, 255);
     margin: 0px;
-    padding: 0.5em;
-    border: 1px solid rgb(52, 52, 52);
+    padding: 0.2em;
+    letter-spacing: 1px;
+    border: 0px;
     width: 100px;
+    border-radius: 3px;
+    margin-right: 0.2em;
 }
 
-.pageSize
-{
-    width:600px;
+.pageSize {
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.referenceStyle{
+.referenceStyle {
     margin-top: 2em;
-    width: 100%; 
+    width: 100%;
 }
 
 .referenceStyle th {
@@ -170,4 +168,113 @@ div .calculator {
 
 .referenceStyle table {
     width: 100%;
+}
+
+
+
+.codeStyling
+{
+    margin-top: 1em;
+    padding: 2em;
+}
+.codeStyling div
+{
+    width: 300px;
+}
+
+.codeStyling h2
+{
+    text-align: center;
+    width: 300px;
+}
+
+.codeStyling p
+{
+   
+    padding: 0.5em;
+    overflow:auto;
+    height: 100px;
+    margin-right: 1em;
+}
+
+/* Form Page */
+.formStyle {
+    background-color: rgb(255, 0, 85);
+    padding: 5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formStyle button {
+    display: block;
+    width: 20em;
+    height: 3em;
+    color: white;
+    background-color: black;
+    border: 0px;
+}
+
+.formStyle h2 {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 10em;
+}
+
+.formStyle input {
+    width: 20em;
+    height: 2em;
+    border: 0px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.formStyle label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.formStyle p {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 20em;
+    margin-top: 0.3em;
+}
+
+.formStyle select {
+    width: 20em;
+    height: 2em;
+    border: 0px;
+}
+
+/* Introduction Page */
+.introStyle h1 {
+    margin-bottom: 0.5em;
+}
+
+.introStyle h2 {
+    margin-bottom: 1em;
+}
+
+/* Basic Tutorial Page */
+
+.previewStyling
+{
+    border: 1px solid black;
+    margin: 0px;
+}
+
+.previewStyling div
+{
+    width: 300px;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+/* Reference Page */
+.tableStyle th {
+    padding-right: 5em;
+    font-weight: normal;
+}
+
+.tableStyle th h3 {
+    font-weight: normal;
 }

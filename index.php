@@ -18,16 +18,17 @@
     <div class="container pt-4">
         <div class="container pt-4">
 
-            <div class="pageSize" style="margin: 2em; margin-left:auto; margin-right:auto; text-align:center;" >
+            <div class="pageSize" style="margin: 2em; margin-left:auto; margin-right:auto; text-align:center;">
 
                 <div class="pb-3">
                     <h3>Welcome to VStudies</h3>
-                    <p>PHP and JavaScript Tutorials</p>
+                    <p>Useful notes and tutorials!</p>
                 </div>
 
                 <div class="pb-5">
-                    <a href=""><button class="indexStyle">Javascript</button></a>
-                    <a href=""><button class="indexStyle">PHP</button></a>
+                    <a href="javascriptNotes.php"><button class="indexStyle">Javascript</button></a>
+                    <a href="regEx.php"><button class="indexStyle">RegEx</button></a>
+                    <a href="phpNotes.php"><button class="indexStyle">PHP</button></a>
                 </div>
             </div>
         </div>

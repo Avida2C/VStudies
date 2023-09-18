@@ -10,6 +10,9 @@
                 <a class="nav-link active" aria-current="page" href="intro.php">Introduction</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="regEx.php">RegEx</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="javaScriptTutorial.php">Tutorial</a>
             </li>
             <li class="nav-item">

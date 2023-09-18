@@ -15,6 +15,9 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
+            </li>
         </ul>
     </div>
 </nav>

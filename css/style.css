@@ -1,3 +1,7 @@
+body{
+    overflow: scroll; 
+}
+
 footer{
     padding: 1em;
     margin-top: 2em;
@@ -85,6 +89,43 @@ div .calculator {
     height: 200px;
     margin-right: 0.5em;
 }
+
+.formCenter
+{
+    display: flex;
+    justify-content: center;
+    white-space: pre-line;
+}
+
+.formStyle
+{
+    width: 600px;
+    margin: 2em;
+}
+.formStyle h3
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.formStyle input{
+    padding: 0.4em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+}
+.formStyle ::placeholder{
+    color: rgb(217, 217, 217);
+}
+.formStyle button{
+    padding: 0.4em;
+    width: 25%;
+    float: right;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+}
+
 
 .imgSize {
     height: 250px;

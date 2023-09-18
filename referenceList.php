@@ -16,9 +16,8 @@
 <body>
     <?php require_once "header.php"?>
 
-
-    <div class="container pt-4 referenceStyle">
-        <div class="container pt-4">
+        <div class="pageSize">
+            <div class="referenceStyle">
             <h1>Reference list</h1>
             <h2 class="pt-4">
                 Operations
@@ -857,9 +856,9 @@
                     </th>
                 </tr>
             </table>
-
+</div>
         </div>
-    </div>
+
 
     <?php require_once "footer.php" ?>
 

@@ -32,181 +32,181 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         +
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Addition
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         -
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Subtraction
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         *
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Multiplication
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         /
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Division
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         %
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Percentages
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         ++
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Increment
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         --
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Decrement
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &gt;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Greater than
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &lt;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Less than
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &gt;=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Greater than or equal to
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &lt;=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Less than or equal to
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         ==
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Equal to
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         !=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Not equal to
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &&
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         AND
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         ||
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         OR
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         !
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         NOT
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         +=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x + y
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         -=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x - y
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         *=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x * y
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         /=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x / y
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         %=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x % y
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         **==
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         x = x ** y
-                    </th>
+                    </td>
                 </tr>
 
 
@@ -227,71 +227,71 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \'
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         single Quote
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \""
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         double quote
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \\
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         backlash
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \n
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         newline
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \r
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         carriage return
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \t
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         tab
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         \b
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         backspace
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         \f
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         form feed
-                    </th>
+                    </td>
                 </tr>
 
             </table>
@@ -308,38 +308,38 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         ==
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         will check the value of the variables
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         ===
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         will check the value and the type of the variables
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         !=
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         will check if the value is not equal to the other
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         !==
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         will check if the value and the type of the variables are NOT the same
-                    </th>
+                    </td>
                 </tr>
 
             </table>
@@ -357,58 +357,58 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         var
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         can be used throughout the program
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         let
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         can only be used within the scope where it has been created
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         const
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         is a variable that should NEVER be changed (changing the variables in a const will result in
                         an
                         error)
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         parseFloat
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         conversion from string to number
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         parseInt
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         conversion from string to number
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         parseString
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         conversion to string
-                    </th>
+                    </td>
                 </tr>
             </table>
 
@@ -427,148 +427,148 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &amp;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;amp;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &lt;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;lt;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &gt;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;gt;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &quot;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;quot;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &apos;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;apos;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &ndash;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;ndash;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &mdash;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;mdash;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &copy;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;copy;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &reg;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;reg;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &trade;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;trade;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &asymp;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;asymp;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &ne;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;ne;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &pound;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;pound;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &euro;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;euro;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &cent;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;cent;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &yen;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;yen;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &deg;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;deg;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         &nbsp;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         &amp;nbsp;
-                    </th>
+                    </td>
                 </tr>
             </table>
 
@@ -587,249 +587,249 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         charAt()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the character at a specified index (position)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         charCodeAt()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the Unicode of the character at a specified index
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         concat()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns two or more joined strings
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         endsWith()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns if a string ends with a specified value
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         fromCharCode()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns Unicode values as characters
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         includes()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns if a string contains a specified value
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         indexOf()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the index (position) of the first occurrence of a value in a string
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         lastIndexOf()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the index (position) of the last occurrence of a value in a string
-                    </th>
+                    </td>
 
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         length
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the length of a string
-                    </th>
+                    </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <td>
                         localeCompare()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Compares two strings in the current locale
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         match()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Searches a string for a value, or a regular expression, and returns the matches
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         prototype
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Allows you to add properties and methods to an object
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         repeat()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a new string with a number of copies of a string
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         replace()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Searches a string for a pattern, and returns a string where the first match is replaced
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         replaceAll()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Searches a string for a pattern and returns a new string where all matches are replaced
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         search()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Searches a string for a value, or regular expression, and returns the index (position) of
                         the match
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         slice()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Extracts a part of a string and returns a new string
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         split()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Splits a string into an array of substrings
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         startsWith()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Checks whether a string begins with specified characters
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         substr()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Extracts a number of characters from a string, from a start index (position)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         substring()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Extracts characters from a string, between two specified indices (positions)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         toLocaleLowerCase()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string converted to lowercase letters, using the host's locale
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         toLocaleUpperCase()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string converted to uppercase letters, using the host's locale
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         toLowerCase()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string converted to lowercase letters
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         toUpperCase()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string converted to uppercase letters
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         toString()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string or a string object as a string
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         trim()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string with removed whitespaces
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         trimEnd()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string with removed whitespaces from the end
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         trimStart()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns a string with removed whitespaces from the start
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         valueOf()
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Returns the primitive value of a string or a string object
-                    </th>
+                    </td>
                 </tr>
             </table>
 
@@ -848,12 +848,12 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         favicon
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         An image which is displayed to the left of the page title in the browser tab
-                    </th>
+                    </td>
                 </tr>
             </table>
 
@@ -868,77 +868,77 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $GLOBALS
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to access global variables from anywhere in the PHP script.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_SERVER
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             holds information about headers, paths, and script locations.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_REQUEST
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to collect data after submitting an HTML form.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_POST
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to collect form data after submitting an HTML form with method="post". $_POST is also
                             widely used to pass variables.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_GET
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to collect form data after submitting an HTML form with method="get".
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_FILES
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to associate array items that are uploaded through the HTTP POST method.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_ENV
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to access environment variables.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_COOKIE
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to access a cookie value.
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             $_SESSION
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             used to temporarily store and make data accessible across all the website pages.
-                        </th>
+                        </td>
                     </tr>
                 </table>
 
@@ -953,14 +953,52 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                         implode()
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             Converts data to string
-                        </th>
+                        </td>
                     </tr>
                 </table>
+
+                <h3>RegEx MetaCharacters</h3>
+                <table>
+                            <tr>
+                                <th>
+                                    Metacharacter
+                                </th>
+                                <th>Definition</th>
+                            </tr>
+                            <tr>
+                                <td>\d</td>
+                                <td>match any digit character similar to [0-9]</td>
+                            </tr>
+                            <tr>
+                                <td>\w</td>
+                                <td>match any word character, similar to [a-z, A-Z, 0-9 and _'s</td>
+                            </tr>
+                            <tr>
+                                <td>\s</td>
+                                <td>match a whitespace character such as space, tabs etc</td>
+                            </tr>
+                            <tr>
+                                <td>\t</td>
+                                <td>match a tab character only</td>
+                            </tr>
+                            <tr>
+                                <td>\0</td>
+                                <td>find a null character</td>
+                            </tr>
+                            <tr>
+                                <td>\b</td>
+                                <td>match the beginning or the end of a word</td>
+                            </tr>
+                            <tr>
+                                <td>\B</td>
+                                <td>match anywhere but in the beginning or the end of a word</td>
+                            </tr>
+                        </table>
 </div>
         </div>
 

@@ -132,15 +132,17 @@
                             </tr>
                             <tr>
                                 <td>\d\s\w</td> <!-- At least 5 numbers -->
-                                <td>1 n, 5  p</td>
+                                <td>1 n, 5 p</td>
                                 <td>d1o</td>
-                                <td>\d any number, \s whitespace, \w any word character [a-z][A-Z][0-9] and _ (underscore)</td>
+                                <td>\d any number, \s whitespace, \w any word character [a-z][A-Z][0-9] and _
+                                    (underscore)</td>
                             </tr>
                             <tr>
                                 <td>\d{3}\s\w{5}</td> <!-- At least 5 numbers -->
                                 <td>321 ninja</td>
                                 <td>heello , helloo</td>
-                                <td>\d any number - 3 spaces, \s whitespace - 1 space, \w any word character [a-z][A-Z][0-9] and _ (underscore) - 5 spaces</td>
+                                <td>\d any number - 3 spaces, \s whitespace - 1 space, \w any word character
+                                    [a-z][A-Z][0-9] and _ (underscore) - 5 spaces</td>
                             </tr>
                             <tr>
                                 <td>he?llo?</td> <!-- At least 5 numbers -->
@@ -176,19 +178,22 @@
                                 <td>pyre|tyre</td> <!-- At least 5 numbers -->
                                 <td>pyre , tyre</td>
                                 <td>pyretyre</td>
-                                <td>this will match either of the inputs given at the front and the back of | as | represents OR</td>
+                                <td>this will match either of the inputs given at the front and the back of | as |
+                                    represents OR</td>
                             </tr>
                             <tr>
                                 <td>(pet|toy|crazy) rabbit</td> <!-- At least 5 numbers -->
                                 <td>pet rabbit , toy rabbit , crazy rabbit</td>
                                 <td>rabbit, pet, toy, crazy</td>
-                                <td>will match one of the inputs in the brackets with that of the input on the outside of the brackets</td>
+                                <td>will match one of the inputs in the brackets with that of the input on the outside
+                                    of the brackets</td>
                             </tr>
                             <tr>
                                 <td>(pet|toy|crazy)? rabbit</td> <!-- At least 5 numbers -->
-                                <td>pet rabbit , toy rabbit , crazy rabbit,  rabbit</td>
+                                <td>pet rabbit , toy rabbit , crazy rabbit, rabbit</td>
                                 <td>pet, toy, crazy</td>
-                                <td>data in the brackets are optional but, space rabbit will also match because of the added ? before the space</td>
+                                <td>data in the brackets are optional but, space rabbit will also match because of the
+                                    added ? before the space</td>
                             </tr>
 
                         </table>
@@ -230,7 +235,7 @@
                                 <td>match anywhere but in the beginning or the end of a word</td>
                             </tr>
                         </table>
-                       
+
                         <h3>Special Characters</h3>
                         <table>
                             <tr>
@@ -253,11 +258,13 @@
                             </tr>
                             <tr>
                                 <td>[^]</td>
-                                <td>negate symbol in a character set, this accepts anything which is not written in the character set</td>
+                                <td>negate symbol in a character set, this accepts anything which is not written in the
+                                    character set</td>
                             </tr>
                             <tr>
                                 <td>?</td>
-                                <td>zero or one quantifier, the character placed before the ? will be match if it doesn't show or shows only once</td>
+                                <td>zero or one quantifier, the character placed before the ? will be match if it
+                                    doesn't show or shows only once</td>
                             </tr>
                             <tr>
                                 <td>.</td>
@@ -267,10 +274,36 @@
                                 <td>*</td>
                                 <td>a bit like + but it is a 0 or more quantifier </td>
                             </tr>
-                            
+
                         </table>
 
                     </div>
+                    <div>
+                        <h1>New User Signup</h1>
+                        <form>
+
+                            <input type="text" name="username" placeholder="username">
+                            <p>Username must be and contain 5 - 12 characters</p>
+
+                            <input type="text" name="email" placeholder="email">
+                            <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+                            <input type="text" name="password" placeholder="password">
+                            <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+
+                            <input type="text" name="telephone" placeholder="telephone">
+                            <p>Telephone must be a valid UK telephone number (11 digits)</p>
+
+                            <input type="text" name="slug" placeholder="profile slug">
+                            <p>Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters
+                            </p>
+
+                        </form>
+                        <script type="text/javascript" src="Javascript/validation.js"></script>
+
+
+                    </div>
+
                 </div>
             </div>
         </div>

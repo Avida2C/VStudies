@@ -1,5 +1,6 @@
 body {
     overflow: scroll;
+    caret-color: transparent;
 }
 
 footer {
@@ -10,6 +11,7 @@ footer {
     background-color: #f9f9f9;
     width: 100%;
     justify-content: end;
+    
 }
 
 footer p {
@@ -93,35 +95,6 @@ div .calculator {
     white-space: pre-line;
 }
 
-.loginStyle {
-    width: 600px;
-    margin: 2em;
-}
-
-.loginStyle h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.loginStyle input {
-    padding: 0.4em;
-    margin-bottom: 1em;
-    width: 100%;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 1px;
-}
-
-.loginStyle ::placeholder {
-    color: rgb(217, 217, 217);
-}
-
-.loginStyle button {
-    padding: 0.4em;
-    width: 25%;
-    float: right;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 1px;
-}
 
 
 .imgSize {
@@ -280,36 +253,94 @@ div .calculator {
 }
 
 
-body{
-    font-family: arial;
-    color: #333;
+
+
+
+
+
+
+
+
+
+
+.wrapper
+{
+    width: 650px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
 }
-h1{
-    font-weight: normal;
-    margin: 20px auto;
-    text-align: center;
+
+/*Admin Login Page */
+.loginStyle {
+    width: 650px; 
 }
-form{
-    width: 500px;
-    margin: 20px auto;
+
+.loginStyle h3 {
+    margin: 0px;
+    padding: 0px;
 }
-input{
-    display: block;
-    padding: 8px 16px;
-    font-size: 2em;
-    margin: 10px auto;
+
+.loginStyle input {
+    padding: 0.4em;
+    margin-bottom: 1em;
     width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 3px solid #ccc;
-    outline: none !important;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+    caret-color:#333;
 }
+
+.loginStyle ::placeholder {
+    color: rgb(217, 217, 217);
+}
+
+.loginStyle button {
+    padding: 0.4em;
+    width: 25%;
+    float: right;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+}
+
+/*RegEX Tutorial*/
+.signUpRegex {
+    width: 400px; 
+}
+
+.signUpRegex h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.signUpRegex input {
+    padding: 0.4em;
+    width: 100%;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+    caret-color:#333;
+}
+
+.signUpRegex ::placeholder {
+    color: rgb(217, 217, 217);
+}
+
+.signUpRegex button {
+    padding: 0.4em;
+    width: 25%;
+    float: right;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 1px;
+}
+
 .valid
 {
-    border: 5px solid green;
+    border: 3px solid green !important;
+    border-radius: 4px !important;
 }
 
 .invalid
 {
-    border: 5px solid red; 
+    border: 3px solid red !important; 
+    border-radius: 4px !important;
+
 }

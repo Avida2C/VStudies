@@ -15,10 +15,9 @@
 <body>
     <?php require_once 'header.php'; ?>
 
-    <div class="container pt-4">
-        <div class="container pt-4">
+    <div class="wrapper">
+        <div class="w-100 pt-4">
 
-            <div class="pageSize">
 
                 <div class="pb-3">
                     <h3>PHP: Hypertext Pre-processor </h3>

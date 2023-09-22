@@ -278,10 +278,9 @@
                         </table>
 
                     </div>
-                    <div>
-                        <h1>New User Signup</h1>
+                    <div class="signUpRegex">
+                        <h3>New User Signup</h3>
                         <form>
-
                             <input type="text" name="username" placeholder="username">
                             <p>Username must be and contain 5 - 12 characters</p>
 
@@ -299,7 +298,7 @@
                             </p>
 
                         </form>
-                        <script type="text/javascript" src="Javascript/validation.js"></script>
+                        
 
 
                     </div>
@@ -317,6 +316,7 @@
     <!-- JavaScript linked-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Javascript/javascript.js"></script>
+    <script src="Javascript/validation.js"></script>
 
     <!-- SCRIPTS SECTION -->
 

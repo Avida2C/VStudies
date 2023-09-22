@@ -15,12 +15,11 @@
 <body>
     <?php require_once "header.php" ?>
 
-    <div class="container pt-4">
-        <div class="container pt-4">
+    <div class="wrapper pt-4">
+        <div class="w-100 pt-4">
             
 
-            <div class="formCenter">
-
+            <div class="pb-5" style="justify-content: center;">
                 <form class="loginStyle" action="post">
                     <h3>Admin Login</h3>
                     <label for="username"> Username</label>

@@ -12,16 +12,16 @@
 
 </head>
 
-<body>
+<body class="bodyStyle">
     <?php require_once "header.php" ?>
 
     <div class="wrapper pt-4">
-        <div class="w-100 pt-4">
+        <div class="w-100">
             
 
             <div class="pb-5" style="justify-content: center;">
                 <form class="loginStyle" action="post">
-                    <h3>Admin Login</h3>
+                    <h3 class="pb-2">Admin Login</h3>
                     <label for="username"> Username</label>
                     <input type="username" name="username" placeholder="Username">
                     <label for="password">Password</label>

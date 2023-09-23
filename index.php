@@ -12,27 +12,20 @@
 
 </head>
 
-<body>
+<body class="bodyStyle">
     <?php require_once "header.php"?>
 
-    <div class="container pt-4">
-        <div class="container pt-4">
-
-            <div class="pageSize" style="margin: 2em; margin-left:auto; margin-right:auto; text-align:center;">
-
-                <div class="pb-3">
+    <div class="wrapper">
+                <div class="indexStyle">
                     <h3>Welcome to VStudies</h3>
                     <p>Useful notes and tutorials!</p>
-                </div>
-
-                <div class="pb-5">
+         
                     <a href="javascriptNotes.php"><button class="indexStyle">Javascript</button></a>
                     <a href="regEx.php"><button class="indexStyle">RegEx</button></a>
                     <a href="phpNotes.php"><button class="indexStyle">PHP</button></a>
                 </div>
             </div>
-        </div>
-    </div>
+
 
     <?php require_once "footer.php" ?>
 

@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="bodyStyle">
     <?php require_once "header.php"?>
 
     <div class="container pt-4">

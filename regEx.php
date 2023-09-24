@@ -15,11 +15,7 @@
 <body class="bodyStyle">
     <?php require_once 'header.php'; ?>
 
-    <div class="container pt-4">
-        <div class="container pt-4">
-
-            <div class="pageSize">
-
+    <div class="wrapper">
                 <div class="pb-3">
                     <h3>RegEx - Regular Expressions</h3>
                     <h4>What are regular expressions??</h4>

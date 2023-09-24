@@ -15,10 +15,7 @@
 <body class="bodyStyle">
     <?php require_once "header.php"?>
 
-    <div class="container pt-4">
-        <div class="container pt-4">
-
-            <div class="pageSize">
+    <div class="wrapper">
 
                 <div class="pb-3">
                     <h3>JavaScript</h3>

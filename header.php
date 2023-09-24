@@ -15,6 +15,8 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="phpNotes.php">PHP</a>
             </li>
+                <a class="nav-link active" aria-current="page" href="apiNotes.php">API</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
             </li>

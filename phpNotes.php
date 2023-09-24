@@ -18,7 +18,7 @@
 
     <div class="wrapper">
         <div class="introPHP">
-            <h3>PHP: Hypertext Pre-processor </h3>
+            <h3>PHP - Hypertext Pre-processor </h3>
             <p>
                 A server-side scripting language, designed primarily for web development,
                 operates exclusively on a server for its execution, as opposed to HTML, CSS, and JavaScript,

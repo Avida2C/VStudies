@@ -16,7 +16,7 @@
 <body class="bodyStyle">
     <?php require_once "header.php"?>
 
-        <div class="pageSize">
+        <div class="wrapper">
             <div class="referenceStyle">
             <h1>Reference list</h1>
             <h2 class="pt-4">

@@ -377,3 +377,11 @@ nav {
     border-radius: 4px !important;
 
 }
+
+
+/* API Notes Page */
+.extraPadding td
+{
+    padding-bottom:1em;
+    padding-top:1em;
+}

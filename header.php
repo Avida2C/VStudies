@@ -4,7 +4,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse px-5" style="justify-content: center;" id="navbarNavDropdown">
-    <a class="navbar-brand" style="margin-right:17em;" href="index.php">VStudies</a>
+    <a class="navbar-brand" style="margin-right:15em;" href="index.php">VStudies</a>
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="javascriptNotes.php">Javascript</a>

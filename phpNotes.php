@@ -17,7 +17,7 @@
     <?php require_once 'header.php'; ?>
 
     <div class="wrapper">
-        <div class="introPHP">
+        <div id="descSection">
             <h3>PHP - Hypertext Pre-processor </h3>
             <p>
                 A server-side scripting language, designed primarily for web development,
@@ -63,206 +63,183 @@
                     Local Server (XAMPP)
                 </li>
             </ul>
-
         </div>
-        
 
-
-
-    <div class="pb-3">
-        <div class="container">
-            <h1>PHP Basics and Fundamentals</h1>
-
-            <div class="pt-4">
-                <h2>Showing Words</h2>
-
-                <div class="d-flex mt-5 previewStyling">
-                    <div class="col">
-                        <?php 
+        <div id="basicsSection">
+            <h3>PHP Basics and Fundamentals</h3>
+            <!-------------------- Example ------------------------>
+            <h4>Showing Words</h4>
+            <div class="d-flex">
+                <div class="col">
+                    <?php 
                     echo "This is written with PHP."; 
                     ?>
-                    </div>
-                    <div class="col">
-                        <p>This is written with HTML.</p>
-                    </div>
                 </div>
-
-
-                <div class="d-flex codeStyling">
-                    <div class="col">
-
-                        <H2>PHP</H2>
-                        <p>
-                            &lt;?php
-                            <br> echo "This is written with PHP.";
-                            <br> ?>
-                            <br>
-                        </p>
-                        <p> 'echo' is used to to display data onto the screen.
-                            <br> PHP works between &lt;?php and ?>.
-                            <br> PHP does not work beyond ?>.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <h2>HTML</h2>
-                        <p>
-                            &lt;p> This is written with HTML.&lt; /p>
-                        </p>
-                    </div>
+                <div class="col">
+                    <p>This is written with HTML.</p>
                 </div>
-
             </div>
-        </div>
-
-    </div>
-    <div class="container">
-        <h3>Comments</h3>
-        <p>
-            /*This is a multi-line comment
-            hehe! */
-            <br>
-            //This is a single-line comment
-        </p>
-    </div>
-
-    <div class="container pt-4">
-        <h2>HTML Escape</h2>
-
-        <div class="d-flex pt-5">
-            <div style="padding-left: 2em;" class="w-50 ">
-                <h2>No Escape</h2>
-                <?php
-                                echo "<p> This can be used as a paragraph </p>"; 
-                                ?>
+            <!--------------- Code --------------->
+            <div class="d-flex">
+                <div class="col">
+                    <H5>PHP</H5>
+                    <p>
+                        &lt;?php
+                        <br> echo "This is written with PHP.";
+                        <br> ?>
+                        <br>
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>HTML</h5>
+                    <p>
+                        &lt;p> This is written with HTML.&lt; /p>
+                    </p>
+                </div>
             </div>
-
-            <div class="w-50">
-                <h2>HTML Escape </h2>
-                <?php if (1 == 1) { ?>
-                <p> This is an <?php echo "awesome"?> paragraph </p>
-                <?php } ?>
+            <p> 'echo' is used to to display data onto the screen.
+                <br> PHP works between &lt;?php and ?>.
+                <br> PHP does not work beyond ?>.
+            </p>
+            <h4>Comments</h4>
+            <p>
+                /*This is a multi-line comment
+                hehe! */
+                <br>
+                //This is a single-line comment
+            </p>
+            <h4>HTML Escape</h4>
+            <div class="d-flex">
+                <div class="col">
+                    <h5>No Escape</h5>
+                    <?php
+                    echo "<p> This can be used as a paragraph </p>"; 
+                    ?>
+                </div>
+                <div class="col">
+                    <h5>HTML Escape </h5>
+                    <?php if (1 == 1) { ?>
+                    <p> This is an <?php echo "awesome"?> paragraph </p>
+                    <?php } ?>
+                </div>
             </div>
-        </div>
-        <div class="d-flex codeStyling">
-            <div class="w-50">
-                <p>
-                    &lt;?php
-                    <br> echo "This is written with PHP.";
-                    <br> ?>
-                    <br>
-                </p>
-                <p>
-                    Without escaping HTML, which can be a bit messy due to the PHP not reading the HTML
-                    tags.
-                </p>
+            <!--------- Code ---------->
+            <div class="d-flex codeStyle">
+                <div class="col">
+                    <p>
+                        &lt;?php
+                        <br> echo "This is written with PHP.";
+                        <br> ?>
+                        <br>
+                    </p>
 
-            </div>
-            <div class="w-50">
-                <p>
-                    &lt;?php if (1 == 1) { ?>
-                    <br> &lt;p>
-                    <br> This is an &lt;?php echo "awesome"?> paragraph
-                    <br> &lt;/p>
-                    <br> &lt;?php} ?>
-                </p>
-                <p>HTML Escape is optimal way to code HTML and PHP together.</p>
-            </div>
-        </div>
 
-        <div class="container">
-            <h2>Data Types</h2>
-            <h3> Scalar (Contain Singular values)</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        &lt;?php if (1 == 1) { ?>
+                        <br> &lt;p>
+                        <br> This is an &lt;?php echo "awesome"?> paragraph
+                        <br> &lt;/p>
+                        <br> &lt;?php} ?>
+                    </p>
+
+                </div>
+            </div>
+            <p>
+                HTML Escape is optimal way to code HTML and PHP together.
+                <br>
+                Without escaping HTML, which can be a bit messy due to the PHP not reading the HTML
+                tags.
+            </p>
+
+            <h4>Data Types</h4>
+            <h5> Scalar (Contain Singular values)</h5>
             <table class="tableStyle">
                 <tr>
                     <th>
-                        <h3>Type</h3>
+                        Type
                     </th>
                     <th>
-                        <h3>Code</h3>
+                        Code
                     </th>
                     <th>
-                        <h3>Definition</h3>
+                        Definition
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Variable
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $nameOfVariable "value" / number
-                    </th>
-                    <th>
-                        <p> a data item which holds one or more data values. </p>
-                    </th>
+                    </td>
+                    <td>
+                        a data item which holds one or more data values.
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         CONST
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         CONST PI = 3.14;
-                    </th>
-                    <th>
-                        <p>an unchangable data type which must be declared rightaway (value given when
-                            created)
-                            names in CONST should be capitalized </p>
-                    </th>
+                    </td>
+                    <td>
+                        an unchangable data type which must be declared rightaway (value given when created) names in
+                        CONST should be capitalized
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         String
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $myName = "Nadine";
-                    </th>
-                    <th>
-                        <p>can use either " or ' . especially when it is needed to use either ' or "
-                            they
-                            will cancel each other when used eg: echo "STRING it's"; </p>
-                    </th>
+                    </td>
+                    <td>
+                        can use either " or ' . especially when it is needed to use either ' or " they will cancel each
+                        other when used eg: echo "STRING it's";
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Integer
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $myAge = 28;
-                    </th>
-                    <th>
-                        <p>Integer: you don't need to use " eg: echo 10; which will automatically been
-                            read as an
-                            integer.
-                            <br> When adding " to numbers eg: echo "10"; will automatically become a
-                            string data
-                            type.
-                            <br> Therefore 10 and "10" are not the same data type.</p>
-                    </th>
+                    </td>
+                    <td>
+                        Integer: you don't need to use " eg: echo 10; which will automatically been read as an integer.
+                        When adding " to numbers eg: echo "10"; will automatically become a string data type.
+                        Therefore 10 and "10" are not the same data type.
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Float
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $objectID = 28.5;
-                    </th>
-                    <th>
-                        <p>echo 10.2; echo 1000.222; </p>
-                    </th>
+                    </td>
+                    <td>
+                        echo 10.2; echo 1000.222;
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Boolean
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $havePet = true;
-                    </th>
-                    <th>
-                        <p>true / false</p>
-                    </th>
+                    </td>
+                    <td>
+                        true / false
+                    </td>
                 </tr>
             </table>
 
-            <h3> Scalar (Contain Multiple values)</h3>
+            <h4> Scalar (Contain Multiple values)</h4>
             <p> $array = array("Nadine", "Marry", "Lorainee");
                 <br> or
                 <br> $arrayNo2 = ["Nadine", "Marry", "Lorainee"];
@@ -271,10 +248,10 @@
                 <br>
             </p>
 
-            <h3> Object Type </h3>
+            <h4> Object Type </h4>
             <p>$objectType = new Car(); </p>
 
-            <h3>Default Variable Creation</h3>
+            <h4>Default Variable Creation</h4>
             <p><i>It is recommended to always assign values in the variables as it may cause errors.</i>
                 <br> $string = "";
                 <br> $int = 0;
@@ -283,297 +260,288 @@
                 <br> $object = null;
                 <br>
             </p>
-        </div>
 
-        <div class="container">
-            <h2>Superglobals/Pre-defined Variables</h2>
-            <div>
-                <p>
-                    &lt;?php
-                    echo $_SERVER["DOCUMENT_ROOT"];
-                    ?>
-                    <br>
-                    &lt;?php
-                    echo $_SERVER["PHP_SELF"];
-                    ?>
-                    <br>
-                    &lt;?php
-                    echo $_SERVER["SERVER_NAME"];
-                    ?>
-                    <br>
-                    &lt;?php
-                    echo $_SERVER["REQUEST_METHOD"];
-                    ?>
-                </p>
-            </div>
-            <table class="tableStyle">
+            <h4>Superglobals/Pre-defined Variables</h4>
+            <p>
+                &lt;?php
+                echo $_SERVER["DOCUMENT_ROOT"];
+                ?>
+                <br>
+                &lt;?php
+                echo $_SERVER["PHP_SELF"];
+                ?>
+                <br>
+                &lt;?php
+                echo $_SERVER["SERVER_NAME"];
+                ?>
+                <br>
+                &lt;?php
+                echo $_SERVER["REQUEST_METHOD"];
+                ?>
+            </p>
+            <table class="tableStyle" style="margin:0; padding:0">
                 <tr>
                     <th>
-                        <h3>Name</h3>
+                        Name
                     </th>
                     <th>
-                        <h3>Definition</h3>
+                        Definition
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $GLOBALS
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to access global variables from anywhere in the PHP script.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_SERVER
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         holds information about headers, paths, and script locations.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_REQUEST
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to collect data after submitting an HTML form.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_POST
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to collect form data after submitting an HTML form with method="post".
                         $_POST is also
                         widely used to pass variables.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_GET
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to collect form data after submitting an HTML form with method="get".
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_FILES
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to associate array items that are uploaded through the HTTP POST method.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_ENV
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to access environment variables.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_COOKIE
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to access a cookie value.
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $_SESSION
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         used to temporarily store and make data accessible across all the website pages.
-                    </th>
+                    </td>
                 </tr>
             </table>
-        </div>
-        <div class="container pt-3">
-            <h3>Arithmetic Operations</h3>
+
+            <h4>Arithmetic Operations</h4>
             <table class="tableStyle">
                 <tr>
                     <th>
-                        <h3>Type</h3>
+                        Type
                     </th>
                     <th>
-                        <h3>Code</h3>
+                        Code
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Addition
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 + $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Subtraction
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 - $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Multiplication
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 * $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Division
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 / $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Finds the remainder
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 % $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Finds the Power of
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 ** $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         Brakets are used to calculate the sum 1st
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $sum = $num1 * ($num2 + $num3);
-                    </th>
+                    </td>
                 </tr>
             </table>
-        </div>
-        <div class="container pt-4">
-            <h3>Assignment Operators</h3>
+
+            <h4>Assignment Operators</h4>
             <table class="tableStyle">
                 <tr>
                     <th>
-                        <h3>Code</h3>
+                        Code
                     </th>
                     <th>
-                        <h3>Similar</h3>
+                        Similar
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 += $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $num1 = $num1 + $num2;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 -= $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $num1 = $num1 - $num2;
-                    </th>
+                    </td>
                 </tr>
 
             </table>
-        </div>
-        <div class="container pt-4">
-            <h3>Comparison Operators</h3>
+
+            <h4>Comparison Operators</h4>
             <table class="tableStyle">
                 <tr>
                     <th>
-                        <h3>Code</h3>
+                        Code
                     </th>
                     <th>
-                        <h3>Definition</h3>
+                        Definition
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 == $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         are they equal to each other? (without the data type)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 === $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         are they equal to each other? (including the data type)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 != $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         are they NOT equal?
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 !== $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         are they NOT equal? (including the data type)
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
-                        $num1 < $num2; </th> <th>
-
-                    </th>
+                    <td>
+                        $num1 < $num2; </td> <td>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 > $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
 
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
-                        $num1 <= $num2; </th> <th>
+                    <td>
+                        $num1 <= $num2; </td> <td>
 
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 >= $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
 
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 <=> $num2;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         spaceship? if num1 is greater than num2 = 1, if equal = 0, if num2 is
                         greater than num1 = -1 (Mainly used to compare data)
-                    </th>
+                    </td>
                 </tr>
 
             </table>
-        </div>
-        <div class="container pt-4">
+
             <h3>Logic Operators</h3>
             <table class="tableStyle">
                 <tr>
@@ -585,57 +553,55 @@
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 === 5 && $num2 === 10;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $num1 === 5 and $num2 === 10;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 === 5 || $num2 === 10;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         $num1 === 5 or $num2 === 10;
-                    </th>
+                    </td>
                 </tr>
                 <tr>
                     <th>
-                        <h3>Code</h3>
+                        Code
                     </th>
                     <th>
-                        <h3>Definition</h3>
+                        Definition
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         $num1 === 5 XOR $num2 === 10;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         either one or the other can be true, if both true or both false = false
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         !$num1 === 5;
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         is statement false?
-                    </th>
+                    </td>
                 </tr>
             </table>
-        </div>
-        <div class="container pt-4">
-            <h3>Increment/Decrement</h3>
+
+            <h4>Increment/Decrement</h4>
             <p> ++$num1;
                 <br> //Adds 1 to the variable and output: 6
                 <br><br> $num1++;
                 <br> // Will output 6 after the number is echoed. the output will be: 5
             </p>
-        </div>
-        <div class="container pt-4 mb-5">
-            <h3>String Operator</h3>
+
+            <h4>String Operator</h4>
             <p>
                 $a = "Nadine";
                 <br> $b = "Vidal";
@@ -646,9 +612,7 @@
                 <br> $b = $a . "is Nadine!";
                 <br>
             </p>
-        </div>
-        <div class="container mb-5">
-            <h3>Conditions and Control Structures</h3>
+            <h4>Conditions and Control Structures</h4>
             <p>
                 $a = 2;
                 <br> $b = 4;
@@ -666,7 +630,7 @@
                 <br><i> this is similar to a variable... therefore it is important to close it. </i>
             </p>
 
-            <h3>Switch Statement</h3>
+            <h4>Switch Statement</h4>
             <p>
                 switch($a){
                 <br> case 1:
@@ -678,7 +642,7 @@
                 <br> echo "None of the conditions are true!";
                 <br> }
             </p>
-            <h3>If, Else if, else statement</h3>
+            <h4>If, Else if, else statement</h4>
             <p>
                 if ($a < $b && !$bool) { <br> echo "First Condition is True!" ;
                     <br> }
@@ -688,25 +652,51 @@
                         <br> echo "None of the conditions are true!";
                         <br> }
             </p>
-        </div>
-    </div>
-    <div class="container my-5">
-        <!-- Functions -->
+            <!---------------- Example -------------->
+            <h4>Echo - Hello World</h4>
+            <?php
+            echo "<p> Hello World, PHP is working grand! Composer... All set! </p>";
+            ?>
+            <!---------------------------------------------------->
+            <div class="codeStyle">
+                <h5>PHP</h5>
+                <p style="margin:0; padding:0; height:48px;">
+                    &lt;?php
+                    echo "&lt;p> Hello World, PHP is working grand! Composer... All set! &lt;/p>";
+                    ?>
+                </p>
+            </div>
+            <!---- Example ----------->
+            <h4>Calling Functions</h4>
+            <?php callMyName()?>
 
+            <?php
+            function callMyName()
+            {
+            echo "<p> Hello, I'm a function! </p>";
+            $num01 = 5;
+            echo "<p>" . $num01 . ": I'm a number!  <br></p>";
+            }
+            ?>
+            <!------- Code --------->
+            <div class="codeStyle">
+                <h5>PHP</h5>
+                <p>
+                    &lt;?php
+                    <br> callMyName();
+                    <br>
+                    <br>function callMyName(){
+                    <br>cho "&lt;p> Hello, I'm a function! &lt;/p>";
+                    <br> $num01 = 5;
+                    <br> echo "&lt;p>" . $num01 . ": I'm a number! &lt;br> &lt;/p>";
+                    <br> }?>
+                </p>
+            </div>
+            <!----- Example ----------->
 
-        <?php
-           echo "Hello World, PHP is working grand! Composer... All set! ";
-      callMyName(); //calling the function callMyName.
-     myArrayFunction(); //calling the function myArrayFunction.
-    
+            <?php myArrayFunction()?>
 
-        function callMyName()
-    {
-
-        echo "<br> Hello, I'm a function! ";
-        $num01 = 5;
-        echo $num01 . ": I'm a number!  <br>";
-    }
+            <?php
 
     function myArrayFunction()
     {
@@ -719,7 +709,15 @@
     } 
     ?>
 
-        <div class="container my-5">
+
+
+
+
+
+
+
+
+
             <!-- Loops tutorial -->
             <?php
                 for ($i = 0; $i <= 100; $i++) 
@@ -762,287 +760,98 @@
                 echo "<br> While loop Complete!";
                 ?>
 
-        </div>
-        <div>
-            <h3>PHP Tutorials</h3>
-            <div class="container pt-4">
+            <div>
+                <h3>PHP Tutorials</h3>
                 <div class="container pt-4">
-                    <div class="container">
-                        <h1>PHP Tutorial</h1>
-                        <div class="container pt-4">
-                            <h1>Form</h1>
+                    <div class="container pt-4">
+                        <div class="container">
+                            <h1>PHP Tutorial</h1>
+                            <div class="container pt-4">
+                                <h1>Form</h1>
 
-                            <form class="formStyle" action="includes/formHandler.php" method="post">
-                                <!-- Post (will submit data but won't be visible) or Get (submit the data where it can be seen) method -->
-                                <!-- If the data is going to remain on the same page: 
+                                <form class="formStyle" action="includes/formHandler.php" method="post">
+                                    <!-- Post (will submit data but won't be visible) or Get (submit the data where it can be seen) method -->
+                                    <!-- If the data is going to remain on the same page: 
                     <form action ="<\?php echo $_SERVER["PHP_SELF"];?>" instead of "folder/file.php" (Not ideal to use this method as it is prone to hacking...) -->
 
-                                <h2>Form:</h2>
-                                <label for="firstname">First name:</label>
-                                <input id="firstname" type="text" name="firstname" placeholder="First Name">
-                                <p> </p>
-                                <label for="lastname">Last name:</label>
-                                <input id="lastname" type="text" name="lastname" placeholder="Last Name">
-                                <p> </p>
-                                <label for="favouritepet">Favorite Pet:</label>
-                                <select name="favouritepet" id="favouritepet">
-                                    <option value="none">None</option>
-                                    <option value="dog">Dog</option>
-                                    <option value="cat">Cat</option>
-                                    <option value="bird">Bird</option>
-                                </select>
-                                <p> </p>
-                                <button type="submit">Submit</button>
-                                <!-- On submit... the data from the form will be sent to formHandler --->
-                            </form>
-
-                            <div class="d-flex mb-5 mt-2 codeStyling">
-
-                                <div class="w-50">
-                                    <H2>PHP</H2>
-                                    <p>
-                                        &lt;?php
-                                        <br> if($_SERVER["REQUEST_METHOD"] == "POST") {
-                                        <br> $firstName = htmlspecialchars($_POST["firstname"]);
-                                        <br> $lastName = htmlspecialchars($_POST["lastname"]);
-                                        <br> $favouritePet = htmlspecialchars($_POST["favouritepet"]);
-                                        <br>
-                                        <br> if(empty($firstName)) {
-                                        <br> header("Location: ../index.php");
-                                        <br> }
-                                        <br> else if(empty($lastName)) {
-                                        <br> header("Location: ../index.php");
-                                        <br> }
-                                        <br>
-                                        <br> echo "This is the data which the user has submitted:";
-                                        <br> echo "&lt;br>";
-                                        <br> echo $firstName;
-                                        <br> echo "&lt;br>";
-                                        <br> echo $lastName;
-                                        <br> echo "&lt;br>";
-                                        <br> echo $favouritePet;
-                                        <br>
-                                        <br> header("Location: ../index.php");
-                                        <br> }
-                                        <br>
-                                        <br> else {
-                                        <br> header("Location: ../index.php");
-                                        <br> } ?>
-                                    </p>
-                                </div>
-
-                                <div class="w-50">
-                                    <h2>HTML</h2>
-                                    <p>
-                                        &lt;form class="formStyle" action="includes/formHandler.php"
-                                        method="post">
-                                        <br> <br> &lt;h2>Form:&lt;/h2>
-                                        <br> <br> &lt;label for="firstname">First name:&lt;/label>
-                                        <br> &lt;input id="firstname" type="text" name="firstname"
-                                        placeholder="First
-                                        Name">
-                                        <br><br> &lt;p> &lt;/p>
-                                        <br><br> &lt;label for="lastname">Last name:&lt;/label>
-                                        <br> &lt;input id="lastname" type="text" name="lastname"
-                                        placeholder="Last
-                                        Name">
-                                        <br><br> &lt;p> &lt;/p>
-                                        <br> <br> &lt;label for="favouritepet">Favorite Pet:&lt;/label>
-                                        <br><br> &lt;select name="favouritepet" id="favouritepet">
-                                        <br> &lt;option value="none">None&lt;/option>
-                                        <br> &lt;option value="dog">Dog&lt;/option>
-                                        <br> &lt;option value="cat">Cat&lt;/option>
-                                        <br> &lt;option value="bird">Bird&lt;/option>
-                                        <br> &lt;/select>
-                                        <br> <br> &lt;p> &lt;/p>
-                                        <br><br> &lt;button type="submit">Submit&lt;/button>
-                                        <br> &lt;/form>
-                                    </p>
-                                </div>
-
-                                <div class="w-50">
-                                    <H2>CSS Properties</H2>
-                                    <p>
-                                        .formStyle {
-                                        <br> background-color: rgb(255, 0, 85);
-                                        <br> padding: 5em;
-                                        <br> font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                                        'Lucida
-                                        Sans
-                                        Unicode',
-                                        Geneva, Verdana, sans-serif;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle button {
-                                        <br> display: block;
-                                        <br> width: 20em;
-                                        <br> height: 3em;
-                                        <br> color: white;
-                                        <br> background-color: black;
-                                        <br> border: 0px;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle h2 {
-                                        <br> border-bottom: 3px solid rgb(255, 255, 255);
-                                        <br> width: 10em;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle input {
-                                        <br> width: 20em;
-                                        <br> height: 2em;
-                                        <br> border: 0px;
-                                        <br> display: block;
-                                        <br> margin-top: 1em;
-                                        <br> margin-bottom: 0.5em;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle label {
-                                        <br> display: block;
-                                        <br> font-size: 16px;
-                                        <br> font-weight: bold;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle p {
-                                        <br> border-bottom: 3px solid rgb(255, 255, 255);
-                                        <br> width: 20em;
-                                        <br> margin-top: 0.3em;
-                                        <br> }
-                                        <br>
-                                        <br> .formStyle select {
-                                        <br> width: 20em;
-                                        <br> height: 2em;
-                                        <br> border: 0px;
-                                        <br> }
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <h1>Calculator</h1>
-                                <form class="formStyle" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
-                                    method="post">
-                                    <input type="number" name="num01" placeholder="Input Number One" required>
-                                    <select name="operator">
-                                        <option value="add">+</option>
-                                        <option value="subtract">-</option>
-                                        <option value="multiply">*</option>
-                                        <option value="divide">/</option>
+                                    <h2>Form:</h2>
+                                    <label for="firstname">First name:</label>
+                                    <input id="firstname" type="text" name="firstname" placeholder="First Name">
+                                    <p> </p>
+                                    <label for="lastname">Last name:</label>
+                                    <input id="lastname" type="text" name="lastname" placeholder="Last Name">
+                                    <p> </p>
+                                    <label for="favouritepet">Favorite Pet:</label>
+                                    <select name="favouritepet" id="favouritepet">
+                                        <option value="none">None</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="bird">Bird</option>
                                     </select>
-                                    <input type="number" name="num02" placeholder="Input Number Two" required>
-                                    <button>Calculate</button>
+                                    <p> </p>
+                                    <button type="submit">Submit</button>
+                                    <!-- On submit... the data from the form will be sent to formHandler --->
                                 </form>
 
-                                <?php 
-                                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                    //Grab Data
-                                    $num01 = filter_input(INPUT_POST, "num01", FILTER_SANITIZE_NUMBER_FLOAT); 
-                                    //Sanitizing data input by filtering the input: INPUT POST method, the name of the input, how we want to sanitize the data (FLOAT/INT/STRING)
-                                    $num02 = filter_input(INPUT_POST, "num02", FILTER_SANITIZE_NUMBER_FLOAT);
-                                    $operator = htmlspecialchars($_POST["operator"]);
-                                    //FILTER_SANITIZE_STRING is not recommended for operators since HTML 8 release. Therefore, using htmlspecialchars is ideal + superglobal
-
-                                    //Error Handlers
-                                    $errors = false;
-                                    if(empty($num01) || empty($num02) || empty($operator)) {
-                                        echo "<p> Fill in all Fields! </p>";
-                                        $errors = true;
-                                    }
-                                    if (!is_numeric($num01) || !is_numeric($num02)) {
-                                        echo "<p> Only write numbers! </p>";
-                                        $errors = true;
-                                    }
-                                    //Calculate the numbers if no errors~
-                                    if(!$errors) //!$errors == false
-                                    {
-                                        $value = 0;
-                                        switch ($operator)
-                                        {
-                                        case"add":
-                                            $value = $num01 + $num02;
-                                            break;
-                                        case"subtract":
-                                            $value = $num01 - $num02;
-                                            break;
-                                        case"multiply":
-                                            $value = $num01 * $num02;
-                                            break;
-                                        case"divide":
-                                            $value = $num01 / $num02;
-                                            break;
-                                        default:
-                                            echo "Something went wrong! </p>";
-                                        }
-                                        echo "<p> Result = " . 
-                                        $value . "</p>";
-                                    }
-                                } ?>
-
-                                <div class="d-flex mb-5 mt-2 codeStyling">
-                                    <div class="w-50">
-                                        <H2>PHP</H2>
+                                <div class="d-flex codeStyle">
+                                    <div class="col">
+                                        <H5>PHP</H5>
                                         <p>
                                             &lt;?php
-                                            <br> if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                            <br> $num01 = filter_input(INPUT_POST, "num01",
-                                            FILTER_SANITIZE_NUMBER_FLOAT);
-                                            <br> $num02 = filter_input(INPUT_POST, "num02",
-                                            FILTER_SANITIZE_NUMBER_FLOAT);
-                                            <br> $operator = htmlspecialchars($_POST["operator"]);
+                                            <br> if($_SERVER["REQUEST_METHOD"] == "POST") {
+                                            <br> $firstName = htmlspecialchars($_POST["firstname"]);
+                                            <br> $lastName = htmlspecialchars($_POST["lastname"]);
+                                            <br> $favouritePet = htmlspecialchars($_POST["favouritepet"]);
                                             <br>
-                                            <br> //Error Handlers
-                                            <br> $errors = false;
-                                            <br> if(empty($num01) || empty($num02) || empty($operator)) {
-                                            <br> echo "&lt;p> Fill in all Fields! &lt;/p>";
-                                            <br> $errors = true;}
-                                            <br><br> if (!is_numeric($num01) || !is_numeric($num02)) {
-                                            <br> echo "&lt;p> Only write numbers! &lt;/p>";
-                                            <br> $errors = true; }
+                                            <br> if(empty($firstName)) {
+                                            <br> header("Location: ../index.php");
+                                            <br> }
+                                            <br> else if(empty($lastName)) {
+                                            <br> header("Location: ../index.php");
+                                            <br> }
                                             <br>
-                                            <br> //Calculate the numbers if no errors found
-                                            <br> if(!$errors) //!$errors == false {
-                                            <br> $value = 0;
-                                            <br> switch ($operator){
-                                            <br> case"add":
-                                            <br> $value = $num01 + $num02;
-                                            <br> break;
-                                            <br> case"subtract":
-                                            <br> $value = $num01 - $num02;
-                                            <br> break;
-                                            <br> case"multiply":
-                                            <br> $value = $num01 * $num02;
-                                            <br> break;
-                                            <br> case"divide":
-                                            <br> $value = $num01 / $num02;
-                                            <br> break;
-                                            <br> default:
-                                            <br> echo "Something went wrong! &lt;/p>";}
-                                            <br> echo "&lt;p> Result = " .
-                                            <br> $value . "&lt;/p>";
-                                            <br> }} ?>
+                                            <br> echo "This is the data which the user has submitted:";
+                                            <br> echo "&lt;br>";
+                                            <br> echo $firstName;
+                                            <br> echo "&lt;br>";
+                                            <br> echo $lastName;
+                                            <br> echo "&lt;br>";
+                                            <br> echo $favouritePet;
+                                            <br>
+                                            <br> header("Location: ../index.php");
+                                            <br> }
+                                            <br>
+                                            <br> else {
+                                            <br> header("Location: ../index.php");
+                                            <br> } ?>
                                         </p>
                                     </div>
 
-                                    <div class="w-50">
-                                        <h2>HTML</h2>
+                                    <div class="col">
+                                        <h5>HTML</h5>
                                         <p>
-                                            &lt;form class="formStyle" action="&lt;?php echo
-                                            htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+                                            &lt;form class="formStyle" action="includes/formHandler.php"
                                             method="post">
-                                            <br> <br> &lt;input type="number" name="num01" placeholder="Input
-                                            Number
-                                            One"
-                                            required>
-                                            <br> <br> &lt;select name="operator">
-                                            <br> &lt;option value="add">+&lt;/option>
-                                            <br> &lt;option value="subtract">-&lt;/option>
-                                            <br> &lt;option value="multiply">*&lt;/option>
-                                            <br> &lt;option value="divide">/&lt;/option>
+                                            <br> <br> &lt;h2>Form:&lt;/h2>
+                                            <br> <br> &lt;label for="firstname">First name:&lt;/label>
+                                            <br> &lt;input id="firstname" type="text" name="firstname"
+                                            placeholder="First
+                                            Name">
+                                            <br><br> &lt;p> &lt;/p>
+                                            <br><br> &lt;label for="lastname">Last name:&lt;/label>
+                                            <br> &lt;input id="lastname" type="text" name="lastname"
+                                            placeholder="Last
+                                            Name">
+                                            <br><br> &lt;p> &lt;/p>
+                                            <br> <br> &lt;label for="favouritepet">Favorite Pet:&lt;/label>
+                                            <br><br> &lt;select name="favouritepet" id="favouritepet">
+                                            <br> &lt;option value="none">None&lt;/option>
+                                            <br> &lt;option value="dog">Dog&lt;/option>
+                                            <br> &lt;option value="cat">Cat&lt;/option>
+                                            <br> &lt;option value="bird">Bird&lt;/option>
                                             <br> &lt;/select>
-                                            <br> <br> &lt;input type="number" name="num02" placeholder="Input
-                                            Number
-                                            Two"
-                                            required>
-                                            <br> &lt;button>Calculate&lt;/button>
+                                            <br> <br> &lt;p> &lt;/p>
+                                            <br><br> &lt;button type="submit">Submit&lt;/button>
                                             <br> &lt;/form>
                                         </p>
                                     </div>
@@ -1053,11 +862,11 @@
                                             .formStyle {
                                             <br> background-color: rgb(255, 0, 85);
                                             <br> padding: 5em;
-                                            <br> font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida
-                                            Grande',
+                                            <br> font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
                                             'Lucida
                                             Sans
-                                            Unicode', Geneva, Verdana, sans-serif;
+                                            Unicode',
+                                            Geneva, Verdana, sans-serif;
                                             <br> }
                                             <br>
                                             <br> .formStyle button {
@@ -1103,26 +912,205 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    </div>
+                                <div class="container">
+                                    <h1>Calculator</h1>
+                                    <form class="formStyle"
+                                        action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                                        <input type="number" name="num01" placeholder="Input Number One" required>
+                                        <select name="operator">
+                                            <option value="add">+</option>
+                                            <option value="subtract">-</option>
+                                            <option value="multiply">*</option>
+                                            <option value="divide">/</option>
+                                        </select>
+                                        <input type="number" name="num02" placeholder="Input Number Two" required>
+                                        <button>Calculate</button>
+                                    </form>
+
+                                    <?php 
+                                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                    //Grab Data
+                                    $num01 = filter_input(INPUT_POST, "num01", FILTER_SANITIZE_NUMBER_FLOAT); 
+                                    //Sanitizing data input by filtering the input: INPUT POST method, the name of the input, how we want to sanitize the data (FLOAT/INT/STRING)
+                                    $num02 = filter_input(INPUT_POST, "num02", FILTER_SANITIZE_NUMBER_FLOAT);
+                                    $operator = htmlspecialchars($_POST["operator"]);
+                                    //FILTER_SANITIZE_STRING is not recommended for operators since HTML 8 release. Therefore, using htmlspecialchars is ideal + superglobal
+
+                                    //Error Handlers
+                                    $errors = false;
+                                    if(empty($num01) || empty($num02) || empty($operator)) {
+                                        echo "<p> Fill in all Fields! </p>";
+                                        $errors = true;
+                                    }
+                                    if (!is_numeric($num01) || !is_numeric($num02)) {
+                                        echo "<p> Only write numbers! </p>";
+                                        $errors = true;
+                                    }
+                                    //Calculate the numbers if no errors~
+                                    if(!$errors) //!$errors == false
+                                    {
+                                        $value = 0;
+                                        switch ($operator)
+                                        {
+                                        case"add":
+                                            $value = $num01 + $num02;
+                                            break;
+                                        case"subtract":
+                                            $value = $num01 - $num02;
+                                            break;
+                                        case"multiply":
+                                            $value = $num01 * $num02;
+                                            break;
+                                        case"divide":
+                                            $value = $num01 / $num02;
+                                            break;
+                                        default:
+                                            echo "Something went wrong! </p>";
+                                        }
+                                        echo "<p> Result = " . 
+                                        $value . "</p>";
+                                    }
+                                } ?>
+
+                                    <div class="d-flex codeStyle">
+                                        <div class="col">
+                                            <H5>PHP</H5>
+                                            <p>
+                                                &lt;?php
+                                                <br> if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                                <br> $num01 = filter_input(INPUT_POST, "num01",
+                                                FILTER_SANITIZE_NUMBER_FLOAT);
+                                                <br> $num02 = filter_input(INPUT_POST, "num02",
+                                                FILTER_SANITIZE_NUMBER_FLOAT);
+                                                <br> $operator = htmlspecialchars($_POST["operator"]);
+                                                <br>
+                                                <br> //Error Handlers
+                                                <br> $errors = false;
+                                                <br> if(empty($num01) || empty($num02) || empty($operator)) {
+                                                <br> echo "&lt;p> Fill in all Fields! &lt;/p>";
+                                                <br> $errors = true;}
+                                                <br><br> if (!is_numeric($num01) || !is_numeric($num02)) {
+                                                <br> echo "&lt;p> Only write numbers! &lt;/p>";
+                                                <br> $errors = true; }
+                                                <br>
+                                                <br> //Calculate the numbers if no errors found
+                                                <br> if(!$errors) //!$errors == false {
+                                                <br> $value = 0;
+                                                <br> switch ($operator){
+                                                <br> case"add":
+                                                <br> $value = $num01 + $num02;
+                                                <br> break;
+                                                <br> case"subtract":
+                                                <br> $value = $num01 - $num02;
+                                                <br> break;
+                                                <br> case"multiply":
+                                                <br> $value = $num01 * $num02;
+                                                <br> break;
+                                                <br> case"divide":
+                                                <br> $value = $num01 / $num02;
+                                                <br> break;
+                                                <br> default:
+                                                <br> echo "Something went wrong! &lt;/p>";}
+                                                <br> echo "&lt;p> Result = " .
+                                                <br> $value . "&lt;/p>";
+                                                <br> }} ?>
+                                            </p>
+                                        </div>
+
+                                        <div class="col">
+                                            <h5>HTML</h5>
+                                            <p>
+                                                &lt;form class="formStyle" action="&lt;?php echo
+                                                htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+                                                method="post">
+                                                <br> <br> &lt;input type="number" name="num01" placeholder="Input
+                                                Number
+                                                One"
+                                                required>
+                                                <br> <br> &lt;select name="operator">
+                                                <br> &lt;option value="add">+&lt;/option>
+                                                <br> &lt;option value="subtract">-&lt;/option>
+                                                <br> &lt;option value="multiply">*&lt;/option>
+                                                <br> &lt;option value="divide">/&lt;/option>
+                                                <br> &lt;/select>
+                                                <br> <br> &lt;input type="number" name="num02" placeholder="Input
+                                                Number
+                                                Two"
+                                                required>
+                                                <br> &lt;button>Calculate&lt;/button>
+                                                <br> &lt;/form>
+                                            </p>
+                                        </div>
+
+                                        <div class="col">
+                                            <H5>CSS</H5>
+                                            <p>
+                                                .formStyle {
+                                                <br> background-color: rgb(255, 0, 85);
+                                                <br> padding: 5em;
+                                                <br> font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida
+                                                Grande',
+                                                'Lucida
+                                                Sans
+                                                Unicode', Geneva, Verdana, sans-serif;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle button {
+                                                <br> display: block;
+                                                <br> width: 20em;
+                                                <br> height: 3em;
+                                                <br> color: white;
+                                                <br> background-color: black;
+                                                <br> border: 0px;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle h2 {
+                                                <br> border-bottom: 3px solid rgb(255, 255, 255);
+                                                <br> width: 10em;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle input {
+                                                <br> width: 20em;
+                                                <br> height: 2em;
+                                                <br> border: 0px;
+                                                <br> display: block;
+                                                <br> margin-top: 1em;
+                                                <br> margin-bottom: 0.5em;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle label {
+                                                <br> display: block;
+                                                <br> font-size: 16px;
+                                                <br> font-weight: bold;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle p {
+                                                <br> border-bottom: 3px solid rgb(255, 255, 255);
+                                                <br> width: 20em;
+                                                <br> margin-top: 0.3em;
+                                                <br> }
+                                                <br>
+                                                <br> .formStyle select {
+                                                <br> width: 20em;
+                                                <br> height: 2em;
+                                                <br> border: 0px;
+                                                <br> }
+                                            </p>
+                                        </div>
+
+                                    </div>
 
 
 
+                                    <?php require_once 'footer.php'; ?>
+                                    <!-- JavaScript linked-->
+                                    <script
+                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+                                    </script>
+                                    <script src="Javascript/javascript.js"></script>
 
-
-    <?php require_once 'footer.php'; ?>
-    <!-- JavaScript linked-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Javascript/javascript.js"></script>
-
-    <!-- SCRIPTS SECTION -->
+                                    <!-- SCRIPTS SECTION -->
 
 </body>
 

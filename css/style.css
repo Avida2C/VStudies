@@ -1,8 +1,19 @@
+.tableStyle td , th{
+    padding-right: 2em;
+    white-space: pre-line;
+    margin: 0;
+}
+.tableStyle td {
+    padding-top: 1em;
+
+}
+
 /* Class Types */
 div .calculator {
     width: 350px;
     padding: 0.5em;
-    background-color: rgb(255, 0, 85);
+    background-color:#BCEAFF;
+   
 }
 
 .calculator button {
@@ -37,182 +48,9 @@ div .calculator {
 
 }
 
-.codeSection {
-    margin-top: 1em;
-    background-color: rgb(255, 0, 85);
-    padding: 2em;
-}
-
-.codeSection div {
-    width: 300px;
-}
-
-.codeSection h2 {
-    text-align: center;
-    width: 300px;
-}
-
-.codeSection p {
-    padding: 1em;
-    ;
-    overflow: auto;
-    height: 200px;
-    margin-right: 0.5em;
-}
-
-.formCenter {
-    display: flex;
-    justify-content: center;
-    white-space: pre-line;
-}
-
-
-
-.imgSize {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-}
-
-
-.referenceStyle {
-    margin-top: 2em;
-    width: 100%;
-}
-
-.referenceStyle th {
-    border: 1px solid black;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.referenceStyle h3 {
-    color: red;
-    font-size: larger;
-}
-
-.referenceStyle table {
-    width: 100%;
-}
-
-
-
-.codeStyling {
-    margin-top: 1em;
-    padding: 2em;
-}
-
-.codeStyling div {
-    width: 300px;
-}
-
-.codeStyling h2 {
-    text-align: center;
-    width: 300px;
-}
-
-.codeStyling p {
-
-    padding: 0.5em;
-    overflow: auto;
-    height: 100px;
-    margin-right: 1em;
-}
-
-/* Form Page */
-.formStyle {
-    background-color: rgb(255, 0, 85);
-    padding: 5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.formStyle button {
-    display: block;
-    width: 20em;
-    height: 3em;
-    color: white;
-    background-color: black;
-    border: 0px;
-}
-
-.formStyle h2 {
-    border-bottom: 3px solid rgb(255, 255, 255);
-    width: 10em;
-}
-
-.formStyle input {
-    width: 20em;
-    height: 2em;
-    border: 0px;
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.formStyle label {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.formStyle p {
-    border-bottom: 3px solid rgb(255, 255, 255);
-    width: 20em;
-    margin-top: 0.3em;
-}
-
-.formStyle select {
-    width: 20em;
-    height: 2em;
-    border: 0px;
-}
-
-/* Introduction Page */
-.introStyle h1 {
-    margin-bottom: 0.5em;
-}
-
-.introStyle h2 {
-    margin-bottom: 1em;
-}
-
-/* Basic Tutorial Page */
-
-.previewStyling {
-    border: 1px solid black;
-    margin: 0px;
-}
-
-.previewStyling div {
-    width: 300px;
-    padding-top: 1.5em;
-    padding-left: 1.5em;
-}
-
-/* Reference Page */
-.tableStyle th {
-    padding-right: 5em;
-    font-weight: normal;
-}
-
-.tableStyle th h3 {
-    font-weight: normal;
-}
-
-
-
-
-
-
-
-
-
 /*Page Styling */
 body {
     overflow: scroll;
-    caret-color: transparent;
     overflow-y:scroll;
     overflow-x: auto;
     
@@ -264,6 +102,27 @@ nav {
     border-right: #BCEAFF 1px solid;
     font-size: 16px;
     line-height: 24px;
+    color: rgb(2 132 199);
+}
+.elementStyle button {
+    background-color: #00A5F1;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    margin-bottom: 2em;
+    padding: 0.2em;
+    letter-spacing: 1px;
+    border: 0px;
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 0.2em;
+}
+.elementStyle input {
+    margin: 0px;
+    padding: 0.2em;
+    letter-spacing: 1px;
+    border: 1px solid #00A5F1;;
+    border-radius: 3px;
+    margin-right: 0.2em;
 }
 
 .wrapper h3{
@@ -299,6 +158,20 @@ nav {
 
 .indexStyle h3{
     margin-top: 1em;
+}
+
+/* Tutorials Section */
+
+.codeStyle p{
+    overflow:auto; 
+    height:150px;
+    width: auto;
+}
+
+.imgSize {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
 /*Admin Login Page */
@@ -340,6 +213,8 @@ nav {
 /*RegEX Tutorial*/
 .signUpRegex {
     width: 400px;
+    border: 2px solid #BCEAFF;
+    padding: 2em;
 }
 
 .signUpRegex h3 {
@@ -352,19 +227,11 @@ nav {
     width: 100%;
     border: 1px solid rgb(195, 195, 195);
     border-radius: 1px;
-    caret-color: #333;
+    
 }
 
 .signUpRegex ::placeholder {
     color: rgb(217, 217, 217);
-}
-
-.signUpRegex button {
-    padding: 0.4em;
-    width: 25%;
-    float: right;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 1px;
 }
 
 .valid {

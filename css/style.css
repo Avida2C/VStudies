@@ -1,10 +1,26 @@
-.tableStyle td , th{
+.tableStyle td,
+th {
     padding-right: 2em;
     white-space: pre-line;
     margin: 0;
 }
+
 .tableStyle td {
-    padding-top: 1em;
+    padding-top: 0.5em;
+}
+
+.tableStyle h4,
+h3,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+.tableStyle {
+    overflow-y: auto;
+    height: 200px;
+    padding: 0;
+    padding-bottom: 2em;
 
 }
 
@@ -12,8 +28,8 @@
 div .calculator {
     width: 350px;
     padding: 0.5em;
-    background-color:#BCEAFF;
-   
+    background-color: #BCEAFF;
+
 }
 
 .calculator button {
@@ -51,13 +67,14 @@ div .calculator {
 /*Page Styling */
 body {
     overflow: scroll;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: auto;
-    
-    
+
+
 }
+
 footer {
-    
+
     width: 100%;
     padding: 0.5em;
     text-align: center;
@@ -104,6 +121,7 @@ nav {
     line-height: 24px;
     color: rgb(2 132 199);
 }
+
 .elementStyle button {
     background-color: #00A5F1;
     color: rgb(255, 255, 255);
@@ -116,21 +134,23 @@ nav {
     border-radius: 3px;
     margin-right: 0.2em;
 }
+
 .elementStyle input {
     margin: 0px;
     padding: 0.2em;
     letter-spacing: 1px;
-    border: 1px solid #00A5F1;;
+    border: 1px solid #00A5F1;
+    ;
     border-radius: 3px;
     margin-right: 0.2em;
 }
 
-.wrapper h3{
+.wrapper h3 {
     font-size: 20px;
     padding-top: 30px;
 }
 
-.wrapper h4{
+.wrapper h4 {
     font-size: 18px;
     padding-top: 26px;
 }
@@ -138,11 +158,11 @@ nav {
 
 /* index Page*/
 
-.indexStyle{
+.indexStyle {
     text-align: center;
 }
 
-.indexStyle button{
+.indexStyle button {
     background-color: #00A5F1;
     color: rgb(255, 255, 255);
     margin: 0px;
@@ -156,15 +176,15 @@ nav {
     margin-right: 0.2em;
 }
 
-.indexStyle h3{
+.indexStyle h3 {
     margin-top: 1em;
 }
 
 /* Tutorials Section */
 
-.codeStyle p{
-    overflow:auto; 
-    height:150px;
+.codeStyle p {
+    overflow: auto;
+    height: 150px;
     width: auto;
 }
 
@@ -227,7 +247,7 @@ nav {
     width: 100%;
     border: 1px solid rgb(195, 195, 195);
     border-radius: 1px;
-    
+
 }
 
 .signUpRegex ::placeholder {
@@ -245,10 +265,39 @@ nav {
 
 }
 
-
 /* API Notes Page */
-.extraPadding td
-{
-    padding-bottom:1em;
-    padding-top:1em;
+.extraPadding td {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+/* PHP Page */ 
+.formStyle {
+    width: 650px;
+}
+
+.formStyle input,
+select {
+    padding: 0.4em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 3px;
+    caret-color: #333;
+}
+
+.formStyle ::placeholder {
+    color: rgb(217, 217, 217);
+}
+
+.formStyle button {
+    padding: 0.4em;
+    width: 25%;
+    float: right;
+    border-radius: 3px;
+    background-color: #00A5F1;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    letter-spacing: 1px;
+    border: 0px;
 }

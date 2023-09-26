@@ -1,8 +1,7 @@
 <?php
 require "functions.php";
-
-include_once('include/header.php');
-include_once('include/navbar.php');
+require_once 'include/header.php';
+require_once 'include/navbar.php';
 ?>
 
 <body class="bodyStyle">
@@ -345,16 +344,16 @@ include_once('include/navbar.php');
                         <td>are they NOT equal? (including the data type)</td>
                     </tr>
                     <tr>
-                        <td>$num1 < $num2; </td> 
-                        <td></td>
+                        <td>$num1 < $num2; </td> <td>
+                        </td>
                     </tr>
                     <tr>
                         <td>$num1 > $num2;</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>$num1 <= $num2; </td>
-                        <td></td>
+                        <td>$num1 <= $num2; </td> <td>
+                        </td>
                     </tr>
                     <tr>
                         <td>$num1 >= $num2;</td>
@@ -532,7 +531,7 @@ include_once('include/navbar.php');
             </div>
             <p>Arrays start from 0 ... [0,1,2,3,4,5] = user input: [1,2,3,4,5,6]</p>
             <!---------------- Example -------------->
-            
+
             <h4>Loops Tutorial</h4>
             <h5>For Loop</h5>
             <?php
@@ -962,9 +961,8 @@ include_once('include/navbar.php');
     </div>
 
     <?php 
-    include_once "include/footer.php";
-    include "include/scripts.php"; ?>
-
+    require_once "include/footer.php";
+    require "include/scripts.php"; ?>
 </body>
 
 </html>

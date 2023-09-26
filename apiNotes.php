@@ -1,8 +1,7 @@
 <?php
 require "functions.php";
-
-include_once('include/header.php');
-include_once('include/navbar.php');
+require_once 'include/header.php';
+require_once 'include/navbar.php';
 ?>
 
 <body class="bodyStyle">
@@ -125,9 +124,8 @@ include_once('include/navbar.php');
     </div>
 
     <?php 
-    include_once "include/footer.php";
-    include "include/scripts.php"; ?>
-
+    require_once "include/footer.php";
+    require "include/scripts.php"; ?>
 </body>
 
 </html>

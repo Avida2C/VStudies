@@ -69,8 +69,6 @@ body {
     overflow: scroll;
     overflow-y: scroll;
     overflow-x: auto;
-
-
 }
 
 footer {
@@ -84,10 +82,12 @@ footer {
 
 footer p {
     font-weight: 200;
+    color: #00A5F1;
 }
 
 nav a {
     font-weight: 300;
+    
 }
 
 nav {
@@ -106,6 +106,10 @@ nav {
 .navbarStyle {
     background-color: #D6F2FF;
     border-bottom: #BCEAFF 1px solid;
+}
+
+.navbarStyle a {
+    color: #00A5F1 !important;
 }
 
 .wrapper {
@@ -211,7 +215,6 @@ nav {
     width: 100%;
     border: 1px solid rgb(195, 195, 195);
     border-radius: 3px;
-    caret-color: #333;
 }
 
 .loginStyle ::placeholder {
@@ -283,7 +286,6 @@ select {
     width: 100%;
     border: 1px solid rgb(195, 195, 195);
     border-radius: 3px;
-    caret-color: #333;
 }
 
 .formStyle ::placeholder {

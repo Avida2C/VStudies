@@ -1,7 +1,7 @@
 <?php
 require "functions.php";
-include_once('include/header.php');
-include_once('include/navbar.php');
+require_once 'include/header.php';
+require_once 'include/navbar.php';
 ?>
 
 <body class="bodyStyle">
@@ -474,7 +474,7 @@ include_once('include/navbar.php');
                         <br> &lt;button type="button" class="calculateBtn" value="="
                         onclick="calculate()">Calculate&lt;/button>
                         <br> &lt;/div>
-                        </p>
+                    </p>
 
                 </div>
                 <div class="col ms-3">
@@ -515,9 +515,8 @@ include_once('include/navbar.php');
 
 
     <?php 
-    include_once "include/footer.php";
-    include "include/scripts.php"; ?>
-
+    require_once "include/footer.php";
+    require "include/scripts.php"; ?>
 </body>
 
 </html>

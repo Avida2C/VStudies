@@ -418,3 +418,4 @@ function calculate() {
 function clearCalc() {
     document.getElementById("calculatorInput").value = " ";
 }
+

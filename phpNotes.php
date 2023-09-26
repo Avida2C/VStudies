@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require "functions.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VStudies - PHP</title>
-
-    <!-- Style Sheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-
-</head>
+include_once('include/header.php');
+include_once('include/navbar.php');
+?>
 
 <body class="bodyStyle">
-
-    <?php require_once 'header.php'; ?>
-
     <div class="wrapper">
         <div id="descSection">
             <h3>PHP - Hypertext Pre-processor </h3>
@@ -41,27 +31,15 @@
             </p>
             <h4>Outcomes</h4>
             <ul>
-                <li>
-                    Acquiring proficiency in PHP programming.
-                </li>
-                <li>
-                    Mastering the art of database manipulation.
-                </li>
-                <li>
-                    Gaining expertise in safeguarding your website through PHP.
-                </li>
+                <li>Acquiring proficiency in PHP programming.</li>
+                <li>Mastering the art of database manipulation.</li>
+                <li>Gaining expertise in safeguarding your website through PHP.</li>
             </ul>
             <h4>Requirements</h4>
             <ul>
-                <li>
-                    HTML
-                </li>
-                <LI>
-                    JavaScript (recommended)
-                </LI>
-                <li>
-                    Local Server (XAMPP)
-                </li>
+                <li>HTML</li>
+                <LI>JavaScript (recommended)</LI>
+                <li>Local Server (XAMPP)</li>
             </ul>
         </div>
 
@@ -133,7 +111,6 @@
                         <br>
                     </p>
 
-
                 </div>
                 <div class="col">
                     <p>
@@ -143,7 +120,6 @@
                         <br> &lt;/p>
                         <br> &lt;?php} ?>
                     </p>
-
                 </div>
             </div>
             <p>
@@ -353,8 +329,7 @@
                         <th>Definition</th>
                     </tr>
                     <tr>
-                        <td>$num1 == $num2;
-                        </td>
+                        <td>$num1 == $num2;</td>
                         <td>are they equal to each other? (without the data type)</td>
                     </tr>
                     <tr>
@@ -370,16 +345,16 @@
                         <td>are they NOT equal? (including the data type)</td>
                     </tr>
                     <tr>
-                        <td>$num1 < $num2; </td> <td>
-                        </td>
+                        <td>$num1 < $num2; </td> 
+                        <td></td>
                     </tr>
                     <tr>
                         <td>$num1 > $num2;</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>$num1 <= $num2; </td> <td>
-                        </td>
+                        <td>$num1 <= $num2; </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>$num1 >= $num2;</td>
@@ -419,7 +394,6 @@
                     </tr>
                 </table>
             </div>
-
 
             <h4>Increment/Decrement</h4>
             <p> ++$num1;
@@ -558,6 +532,7 @@
             </div>
             <p>Arrays start from 0 ... [0,1,2,3,4,5] = user input: [1,2,3,4,5,6]</p>
             <!---------------- Example -------------->
+            
             <h4>Loops Tutorial</h4>
             <h5>For Loop</h5>
             <?php
@@ -794,8 +769,6 @@
                     ideal to use this method as it is prone to hacking...)</p>
             </p>
 
-
-
             <div class="formStyle">
                 <h1>Calculator</h1>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -812,6 +785,7 @@
             </div>
 
             <?php 
+        
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //Grab Data
                 $num01 = filter_input(INPUT_POST, "num01", FILTER_SANITIZE_NUMBER_FLOAT); 
@@ -854,7 +828,8 @@
                     echo "<p> Result = " . 
                     $value . "</p>";
                 }
-            } ?>
+            }
+            ?>
 
             <div class="d-flex codeStyle" style="margin-top:5em;">
                 <div class="col">
@@ -986,15 +961,9 @@
         </div>
     </div>
 
-
-
-    <?php require_once 'footer.php'; ?>
-    <!-- JavaScript linked-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <script src="Javascript/javascript.js"></script>
-
-    <!-- SCRIPTS SECTION -->
+    <?php 
+    include_once "include/footer.php";
+    include "include/scripts.php"; ?>
 
 </body>
 

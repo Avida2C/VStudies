@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VStudies - JS</title>
-
-    <!-- Stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-
-</head>
+<?php
+require "functions.php";
+include_once('include/header.php');
+include_once('include/navbar.php');
+?>
 
 <body class="bodyStyle">
-    <?php require_once "header.php"?>
-
     <div class="wrapper">
         <div id="DescSection">
             <h3>JavaScript</h3>
@@ -30,45 +20,25 @@
                 In 2009 JavaScript has been implemented inside C++ which is called Node this gives the
                 programmer the ability to create Mobile Applications!
             </p>
-            <h4 class="mt-4">What can you do with JavaScript?</h4>
+            <h4>What can you do with JavaScript?</h4>
             <!--Ordered List which will make the list numbered. Unordered List will create a bullet form list-->
             <ol>
-                <li>
-                    Interactive Websites.
-                </li>
-                <li>
-                    Mobile Applications.
-                </li>
-                <li>
-                    Real-Time networking Applications. <br> (such as Chat and video streaming services)
-                </li>
-                <li>
-                    Command-line Tools.
-                </li>
-                <li>
-                    Games.
-                </li>
+                <li>Interactive Websites.</li>
+                <li>Mobile Applications.</li>
+                <li>Real-Time networking Applications. <br> (such as Chat and video streaming services)</li>
+                <li>Command-line Tools.</li>
+                <li>Games.</li>
             </ol>
 
-            <h4 class="mt-4">Code Editors</h4>
+            <h4>Code Editors</h4>
             <p> Some of these editors include:</p>
             <!--Ordered List which will make the list numbered. Unordered List will create a bullet form list-->
             <ol>
-                <li>
-                    Visual Studio Code (VSCode)
-                </li>
-                <li>
-                    Sublime Text
-                </li>
-                <li>
-                    Note++
-                </li>
-                <li>
-                    Atom
-                </li>
-                <li>
-                    Brackets
-                </li>
+                <li>Visual Studio Code (VSCode)</li>
+                <li>Sublime Text</li>
+                <li>Note++</li>
+                <li>Atom</li>
+                <li>Brackets</li>
             </ol>
             <p>And many more!</p>
 
@@ -156,7 +126,6 @@
                         document.getElementById("colourChangeText").style.color = "green"
                         }
                         <br><br>
-
                         function blue() {
                         console.log("Blue");
                         document.getElementById("colourChangeText").innerHTML = "Blue";
@@ -308,7 +277,7 @@
                         <br>&lt;p> id="ageResult">&lt;/p>
                         <br>&lt;button type="button" onclick="checkAgeCalculator()">
                         <br>Check&lt;/button>
-
+                    </p>
                 </div>
             </div>
             <!----------------------------- example --------------------------------------->
@@ -341,7 +310,6 @@
                 </div>
             </div>
             <!---------------------------------------------------->
-
             <h4>While + Array up to 50</h4>
             <p id="whileArray" style="overflow-x:scroll; padding-top:1em; padding-bottom:1em;"> </p>
             <!---------------------------------------------------->
@@ -360,6 +328,7 @@
                         <br>document.getElementById("whileArray").innerHTML = loopArray;
                         <br>
                         }
+                    </p>
                 </div>
 
                 <div class="col ms-3">
@@ -505,7 +474,8 @@
                         <br> &lt;button type="button" class="calculateBtn" value="="
                         onclick="calculate()">Calculate&lt;/button>
                         <br> &lt;/div>
-                        <br> &lt;/p>
+                        </p>
+
                 </div>
                 <div class="col ms-3">
                     <H5>CSS</H5>
@@ -544,18 +514,9 @@
     </div>
 
 
-    <?php require_once "footer.php" ?>
-
-    <!-- JavaScript linked-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Javascript/javascript.js"></script>
-
-    <!-- SCRIPTS SECTION -->
-    <script>
-        whileArray();
-        counterLoop();
-    </script>
-
+    <?php 
+    include_once "include/footer.php";
+    include "include/scripts.php"; ?>
 
 </body>
 

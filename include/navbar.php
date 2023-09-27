@@ -20,15 +20,15 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
             </li>
-            <?php if(empty($_SESSION[''])) :
-                ?>
+            <?php if(empty($_SESSION['USER'])):
+            ?>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="login.php">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="signup.php">SignUp</a>
+                <a class="nav-link active" aria-current="page" href="signup.php">Signup</a>
             </li>
-            <?php else:?>
+            <?php else: ?>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
             </li>

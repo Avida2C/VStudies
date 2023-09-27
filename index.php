@@ -1,8 +1,6 @@
 <?php
 require "functions.php";
 
-
-//check_login();
 ?>
 
 <body class="bodyStyle">

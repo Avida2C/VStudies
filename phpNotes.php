@@ -2,13 +2,13 @@
 require "functions.php";
 
 
-//check_login();
+check_login();
 ?>
 
 <body class="bodyStyle">
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
-    
+
     <div class="wrapper">
         <div id="descSection">
             <h3>PHP - Hypertext Pre-processor </h3>

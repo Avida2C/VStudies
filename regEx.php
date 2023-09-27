@@ -1,7 +1,7 @@
 <?php
 require "functions.php";
 
-//check_login();
+check_login();
 ?>
 
 <body class="bodyStyle">
@@ -333,7 +333,7 @@ require "functions.php";
                 </p>
             </form>
         </div>
-
+</div>
     </div>
 
     <?php 

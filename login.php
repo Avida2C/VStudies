@@ -1,7 +1,5 @@
 <?php
 require "functions.php";
-require_once 'include/header.php';
-require_once 'include/navbar.php';
 
 //check_login();
 ?>
@@ -13,9 +11,9 @@ require_once 'include/navbar.php';
     <div class="wrapper">
         <div class="pb-5" style="justify-content: center;">
             <form class="loginStyle" action="post">
-                <h3 class="pb-2">Admin Login</h3>
-                <label for="username"> Username</label>
-                <input type="username" name="username" placeholder="Username">
+                <h3 class="pb-2">Log In</h3>
+                <label for="email"> Email</label>
+                <input type="email" name="email" placeholder="Username">
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Password">
                 <button>Login</button>

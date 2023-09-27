@@ -1,11 +1,14 @@
 <?php
 require "functions.php";
-require_once 'include/header.php';
-require_once 'include/navbar.php';
+
+
+//check_login();
 ?>
 
 <body class="bodyStyle">
-
+<?php require_once 'include/header.php';
+    require_once 'include/navbar.php';?>
+    
     <div class="wrapper">
         <div>
             <h3>API - Application Programming Interface </h3>

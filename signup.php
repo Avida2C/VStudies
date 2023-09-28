@@ -30,6 +30,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             $inputExists = true;
         }    
         else{
+            $password = sha1($password);
+
             $date = date('Y-m-d H:i:s'); //this will take the current date and time 
             //this will gather the data inputted in the form and saved into the databse:
             $query = "insert into users (username, email, password, date) values ('$username', '$email', '$password', '$date')";
@@ -43,7 +45,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
          
             header("Location: login.php");
         }
-
     }
 }
 ?>
@@ -56,6 +57,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="pb-5" style="justify-content: center;">
             <form id="signupForm" class="loginStyle" method="post">
                 <h3 class="pb-2">Sign Up</h3>
+                <p>Already a member? <a style="text-decoration:none;" href="login.php">Log In</a></p>
+
                 <label for="username"> Username</label>
                 <input id="signupName" type="username" name="username" placeholder="Username">
                 <p>Username must be and contain 5 - 12 characters</p>
@@ -66,8 +69,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 <label for="password">Password</label>
                 <input id="signupPassword" type="password" name="password" placeholder="Password">
-                <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
-                <button>Sign Up</button>
+                <p>Password must be alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+                
+                <button class="mt-3">Sign Up!</button>
                 <?php 
                 if(!$isValid) {
                     echo '<p style="color:red">One or more inputs are incorrect! Please try again. </p>';

@@ -3,8 +3,9 @@ require "functions.php";
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = htmlspecialchars(addslashes($_POST['email'])); // 'addslashes' allows the user to use brackets
-    $password = htmlspecialchars(addslashes($_POST['password']));
     
+    $password = sha1(htmlspecialchars(addslashes($_POST['password'])));
+
     $query = "select * from users where email = '$email' && password = '$password' limit 1";
     
     $result = mysqli_query($con, $query);
@@ -27,27 +28,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 ?>
 
 <body class="bodyStyle">
-<?php require_once 'include/header.php';
+    <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-<?php
-    if(!empty($error)) {
-        echo '<div class="container" style="margin-left: auto; margin-right: auto;">
-        <p style="text-align:center; margin-top:2em; margin-bottom:0px; color:red;">' 
-        . $error . 
-        '</p></div>';
-    }
-    ?>
+
 
     <div class="wrapper">
         <div class="pb-5" style="justify-content: center;">
             <form class="loginStyle" method="post">
                 <h3 class="pb-2">Log In</h3>
+                <p>Don't have an account? <a href="signup.php" style="text-decoration:none;">Sign Up</a></p>
                 <label for="email"> Email</label>
                 <input type="email" name="email" placeholder="Username">
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Password">
+                <?php
+                if(!empty($error)) {
+                    echo '<p style="color:red;">' 
+                    . $error . 
+                    '</p>';
+                }
+                ?>
+                
                 <button>Login</button>
+                <p><a style="text-decoration:none;" href="forgotPassword.php">Forgot your password?</a></p>
+
             </form>
         </div>
     </div>

@@ -5,7 +5,7 @@ check_login();
 ?>
 
 <body class="bodyStyle">
-<?php require_once 'include/header.php';
+    <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
     <div class="wrapper">

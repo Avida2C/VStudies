@@ -3,11 +3,8 @@ require "functions.php";
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = htmlspecialchars(addslashes($_POST['email'])); // 'addslashes' allows the user to use brackets
-    
     $password = sha1(htmlspecialchars(addslashes($_POST['password'])));
-
-    $query = "select * from users where email = '$email' && password = '$password' limit 1";
-    
+    $query = "SELECT * FROM users WHERE email = '$email' && password = '$password' LIMIT 1";
     $result = mysqli_query($con, $query);
 
     // print_r(mysqli_num_rows($result)); this will display the result which includes the results found in the db under num_rows
@@ -15,7 +12,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $row = mysqli_fetch_assoc($result); //fetches an array and uses it as an associative array
         //['email' => email] : this is an associative array
         $_SESSION['USER'] = ($row); //Memory location, this saves session's data 
-
 
         header("Location: index.php"); //this will direct the user to a different page
         die; //will stop the process
@@ -30,8 +26,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 <body class="bodyStyle">
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
-
-
 
     <div class="wrapper">
         <div class="pb-5" style="justify-content: center;">
@@ -49,10 +43,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                     '</p>';
                 }
                 ?>
-                
                 <button>Login</button>
                 <p><a style="text-decoration:none;" href="forgotPassword.php">Forgot your password?</a></p>
-
             </form>
         </div>
     </div>

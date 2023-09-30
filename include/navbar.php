@@ -20,8 +20,8 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
             </li>
-            <?php if(empty($_SESSION['USER'])):
-            ?>
+            <?php if(empty($_SESSION['USER'])) :
+                ?>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="login.php">Login</a>
             </li>

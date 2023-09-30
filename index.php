@@ -4,14 +4,13 @@ require "functions.php";
 ?>
 
 <body class="bodyStyle">
-<?php require_once 'include/header.php';
+    <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
     <div class="wrapper">
         <div class="indexStyle">
             <h3>Welcome to VStudies</h3>
             <p>Useful notes and tutorials!</p>
-
             <a href="javascriptNotes.php"><button class="indexStyle">Javascript</button></a>
             <a href="regEx.php"><button class="indexStyle">RegEx</button></a>
             <a href="phpNotes.php"><button class="indexStyle">PHP</button></a>

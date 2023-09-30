@@ -22,8 +22,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         
     }
     if($isValid) {
-        $query = "select * from users where username = '$username' || email = '$email'";
-        
+        $query = "SELECT * FROM users WHERE username = '$username' || email = '$email'";
         $result = mysqli_query($con, $query);
 
         if(mysqli_num_rows($result) > 0) {
@@ -34,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
             $date = date('Y-m-d H:i:s'); //this will take the current date and time 
             //this will gather the data inputted in the form and saved into the databse:
-            $query = "insert into users (username, email, password, date) values ('$username', '$email', '$password', '$date')";
+            $query = "INSERT INTO users (username, email, password, date) VALUES ('$username', '$email', '$password', '$date')";
             //this will get the data in the form's inputs and save this data into the $var and to the local db
             //$query is created to add data into MySQL 
 

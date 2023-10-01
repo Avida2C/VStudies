@@ -48,7 +48,7 @@ else if(isset($_POST["resend_verification"])) {
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
+    <div class="wrapper" style="height: 100%;">
         <div class="pb-5" style="justify-content: center;">
             <form id="signupForm" class="loginStyle py-5" method="post">
                 <input type="text" name="verification_code" placeholder="Enter verification code" />

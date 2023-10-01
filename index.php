@@ -7,7 +7,7 @@ require "functions.php";
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
+    <div class="wrapper" style="height: 100%;">
         <div class="indexStyle">
             <h3>Welcome to VStudies</h3>
             <p>Useful notes and tutorials!</p>

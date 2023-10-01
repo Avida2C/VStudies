@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
+    <div class="wrapper" style="height: 100%;" >
         <div class="pb-5" style="justify-content: center;">
             <form id="signupForm" class="loginStyle" method="post">
                 <h3 class="pb-2">Sign Up</h3>

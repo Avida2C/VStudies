@@ -30,10 +30,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         }    
         else{
             $password = sha1($password);
+            $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
+            $verification_expire = date('Y-m-d H:i:s',time()+14400); 
+    
+            Mailer($verification_code, $email, $name);
 
             $date = date('Y-m-d H:i:s'); //this will take the current date and time 
             //this will gather the data inputted in the form and saved into the databse:
-            $query = "INSERT INTO users (username, email, password, date) VALUES ('$username', '$email', '$password', '$date')";
+            $query = "INSERT INTO users (username, email, password, date, verification_code, verification_expire, verified) VALUES ('$username', '$email', '$password', '$date', '$verification_code', '$verification_expire', false )";
             //this will get the data in the form's inputs and save this data into the $var and to the local db
             //$query is created to add data into MySQL 
 
@@ -42,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             //var will determine the outcome gathered from the query var, if this is successful, the details will go into the SQL database
             //directs the user to different pages  
          
-            header("Location: login.php");
+            header("Location: emailVerification.php?email=" . $email);
         }
     }
 }

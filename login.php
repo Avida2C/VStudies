@@ -11,11 +11,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     if(mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result); //fetches an array and uses it as an associative array
         //['email' => email] : this is an associative array
-        $_SESSION['USER'] = ($row); //Memory location, this saves session's data 
-
-        header("Location: index.php"); //this will direct the user to a different page
-        die; //will stop the process
+        
+ 
+        if ($row['verified'] == 0) {
+            $error = "Please verify your email <a href='emailVerification.php?email=" . $email . "'>from here</a>";
+        }
+        else{
+            $_SESSION['USER'] = ($row); //Memory location, this saves session's data 
+            header("Location: index.php"); //this will direct the user to a different page
+        }
     }
+
     else
     {
         $error = "Incorrect email or password, try again!";

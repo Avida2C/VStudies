@@ -4,11 +4,12 @@ require "functions.php";
 check_login();
 ?>
 
-    <?php require_once 'include/header.php';
+<?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
-        <div>
+<div class="container d-flex justify-content-center p-5 col-md-8">
+    <div class="row">
+        <div class="col">
             <h3>API - Application Programming Interface </h3>
             <p>It is basically how different machines and software talk to each other to create ever more complex
                 applications. Even though APIs can simply refer to an interface to a local library, or the libraries
@@ -65,7 +66,7 @@ check_login();
                 <li>Webhook</li>
             </ul>
             <h4>Terminology</h4>
-            <table class="extraPadding">
+            <table>
                 <tr>
                     <td>
                         API
@@ -123,6 +124,7 @@ check_login();
             </ul>
         </div>
     </div>
+</div>
 
     <?php 
     require_once "include/footer.php";?>

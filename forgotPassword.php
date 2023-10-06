@@ -40,49 +40,50 @@ else if(isset($_POST["verificationCode"])) {
         $result2 = "Email not found.";
         $showverification = false;
     }
-else{
-    $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
-    $verification_expire = date('Y-m-d H:i:s', time()+14400); 
-    Mailer($verification_code, $email, $user_row['username']);
-    $sql = "UPDATE users SET verification_code = '$verification_code', verification_expire = '$verification_expire' where email = '$email'";
-    $result  = mysqli_query($con, $sql);
-    $showverification = true;
-}
+    else{
+        $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
+        $verification_expire = date('Y-m-d H:i:s', time()+14400); 
+        Mailer($verification_code, $email, $user_row['username']);
+        $sql = "UPDATE users SET verification_code = '$verification_code', verification_expire = '$verification_expire' where email = '$email'";
+        $result  = mysqli_query($con, $sql);
+        $showverification = true;
+    }
 }  
 ?>
 
-    <?php require_once 'include/header.php';
+<?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper" style="height: 100%;">
-        <div class="pb-5" style="justify-content: center;">
-            <form id="signupForm" class="loginStyle py-5" method="post">
-            <?php if(!$showverification) :
-            ?>
-        <input type="text" name="email" placeholder="Enter email" required>
+<div class="container d-flex justify-content-center p-5 col-md-8 text-center">
+    <div class="row">
+        <div class="col">
 
-        <button name="verificationCode" class="w-100">Send Verification Code</button>
+            <form id="signupForm" class="form-control p-5" style="width:500px;" method="post">
+                <?php if(!$showverification) :
+                    ?>
+                <input type="text" class="w-100 p-1" name="email" placeholder="Enter email" required>
 
-        <?php else: ?>
+                <button name="verificationCode" class="btn btn-primary w-100 mt-3">Send Verification Code</button>
 
-        <input type="text" name="verification_code" placeholder="Enter Verification Code" required>
+                <?php else: ?>
 
-        <input type="password" name="password" placeholder="Enter New Password" required>
-
-        <button class="w-100"  name="changepassword">Change Password</button>
-        
-        <?php endif; 
-        
-        ?>
-        <p><?php echo $result2; ?> </p>
+                <input type="text" name="verification_code" style="width:400px" class="p-1"
+                    placeholder="Enter Verification Code" required>
+                <br>
+                <input type="password" name="password" style="width:400px" class="mt-2 mb-2 p-1"
+                    placeholder="Enter New Password" required>
+                <br>
+                <button class="w-100 btn btn-primary" name="changepassword">Change Password</button>
+                <script src="javascript/validation.js"></script>
+                <?php endif; 
+                ?>
+                <p><?php echo $result2; ?> </p>
 
             </form>
 
         </div>
     </div>
+</div>
 
-    <?php 
+<?php 
     require_once "include/footer.php";?>
-
-    <script src="Javascript/validation.js"></script>
-

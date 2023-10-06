@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         else{
             $password = sha1($password);
             $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
-            $verification_expire = date('Y-m-d H:i:s',time()+14400); 
+            $verification_expire = date('Y-m-d H:i:s', time()+14400); 
     
             Mailer($verification_code, $email, $name);
 
@@ -52,29 +52,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 
-    <?php require_once 'include/header.php';
+<?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper" style="height: 100%;" >
-        <div class="pb-5" style="justify-content: center;">
-            <form id="signupForm" class="loginStyle" method="post">
-                <h3 class="pb-2">Sign Up</h3>
-                <p>Already a member? <a style="text-decoration:none;" href="login.php">Log In</a></p>
-
-                <label for="username"> Username</label>
-                <input id="signupName" type="username" name="username" placeholder="Username">
+<div class="container d-flex justify-content-center p-5 col-md-8">
+    <div class="row">
+        <div class="col">
+            <form id="signupForm" class="form-control p-5" style="width:500px;" method="post">
+                <h3>Sign Up</h3>
+                <p>Already a member? <a class="text-decoration-none" href="login.php">Log In</a></p>
+                <label for="username"> Username:</label>
+                <br> <input id="signupName" class="formSpacing" type="username" name="username" placeholder="Username">
                 <p>Username must be and contain 5 - 12 characters</p>
 
-                <label for="text"> Email</label>
-                <input id="signupEmail" type="email" name="email" placeholder="Email">
+                <label for="text">Email:</label>
+                <br><input id="signupEmail" class="formSpacing" type="email" name="email" placeholder="Email">
                 <p>Email must be a valid address, e.g. me@mydomain.com</p>
 
-                <label for="password">Password</label>
-                <input id="signupPassword" type="password" name="password" placeholder="Password">
-                <p>Password must be alphanumeric (symbols such as: -@~`!@#$%^&*()_+={}|\:;"'<,>.? are also allowed) and be 8 - 20 characters
+                <label for="password">Password:&nbsp;</label>
+                <br><input id="signupPassword" class="formSpacing" type="password" name="password"
+                    placeholder="Password">
+                <p>Password must be alphanumeric (symbols such as: -@~`!@#$%^&*()_+={}|\:;"'<,>.? are also allowed) and
+                        be 8 - 20 characters
                 </p>
-                
-                <button class="mt-3">Sign Up!</button>
+
+                <button class="btn btn-primary mt-3 w-100">Sign Up!</button>
                 <?php 
                 if(!$isValid) {
                     echo '<p style="color:red">One or more inputs are incorrect! Please try again. </p>';
@@ -85,10 +87,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                 ?>
 
             </form>
-
         </div>
     </div>
+</div>
 
-    <?php 
+
+<?php 
     require_once "include/footer.php";?>
-    <script src="Javascript/validation.js"></script>
+<script src="Javascript/validation.js"></script>

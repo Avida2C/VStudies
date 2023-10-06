@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg px-5 w-100 navbarStyle">
+<nav class="navbar navbar-expand-lg bg-light p-2 shadow-sm">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

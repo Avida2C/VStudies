@@ -7,8 +7,10 @@ check_login();
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
-        <div id="descSection">
+<div class="container d-flex justify-content-center p-5 col-md-8">
+    <div class="row">
+        <div class="col">
+
             <h3>PHP - Hypertext Pre-processor </h3>
             <p>
                 A server-side scripting language, designed primarily for web development,
@@ -957,7 +959,7 @@ check_login();
                         <br> }
                     </p>
                 </div>
-
+                        </div>
             </div>
         </div>
     </div>

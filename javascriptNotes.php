@@ -9,8 +9,10 @@ check_login();
     require_once 'include/navbar.php';
     ?>
 
-    <div class="wrapper">
-        <div id="DescSection">
+    <div class="container d-flex justify-content-center p-5 col-md-8">
+        <div class="row">
+            <div class="col">
+
             <h3>JavaScript</h3>
             <p>
                 One of the fastest growing programming language in the world! <br>
@@ -56,9 +58,9 @@ check_login();
         <div id="TutorialSection">
             <h3>JavaScript Tutorial</h3>
             <h4> Easy Image change on Click</h4>
-            <img id="changeImg" class="imgSize" src="img/card-back.jpg" alt="flower" onclick="changeImg()">
+            <img id="changeImg" class="object-fit-cover" style="width: 250px; height: 250px; " src="img/card-back.jpg" alt="flower" onclick="changeImg()">
             <!----------------------- Code ----------------------->
-            <div class="d-flex mt-4 codeStyle">
+            <div class="row">
                 <div class="col">
                     <h5>JavaScript</h5>
                     <p>
@@ -84,13 +86,13 @@ check_login();
                         <br> } }
                     </p>
                 </div>
-                <div class="col ms-3">
+                <div class="col">
                     <H5>HTML</H5>
                     <p> &lt;img id="changeImg" class="imgSize" src="img/card-back.jpg" alt="flower"
                         onclick="changeImg()"&gt;
                     </p>
                 </div>
-                <div class="col ms-3">
+                <div class="col">
                     <H5>CSS</H5>
                     <p>
                         .imgSize {
@@ -481,7 +483,7 @@ check_login();
                     </p>
 
                 </div>
-                <div class="col ms-3">
+                <div class="col">
                     <H5>CSS</H5>
                     <p>
                         div .calculator {
@@ -516,6 +518,7 @@ check_login();
             </div>
         </div>
     </div>
+                        </div>
 
 
     <?php 

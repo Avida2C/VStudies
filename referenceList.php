@@ -4,11 +4,13 @@ require "functions.php";
 check_login();
 ?>
 
-    <?php require_once 'include/header.php';
+<?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper">
-        <div id="referencesSection">
+<div class="container d-flex justify-content-center p-5 col-md-8">
+    <div class="row">
+        <div class="col">
+
             <h3>Reference list</h3>
             <h4> Operations </h4>
             <div class="tableStyle">
@@ -556,7 +558,7 @@ check_login();
             </div>
         </div>
     </div>
+</div>
 
-
-    <?php 
+<?php 
     require_once "include/footer.php";?>

@@ -32,15 +32,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper" style="height: 100%;">
-        <div class="pb-5" style="justify-content: center;">
-            <form class="loginStyle" method="post">
-                <h3 class="pb-2">Log In</h3>
+<div class="container d-flex justify-content-center p-5 col-md-8">
+    <div class="row">
+        <div class="col">
+            <form class="form-control p-5" style="width:500px;" method="post">
+                <h3>Log In</h3>
                 <p>Don't have an account? <a href="signup.php" style="text-decoration:none;">Sign Up</a></p>
                 <label for="email"> Email</label>
-                <input type="email" name="email" placeholder="Username">
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <br><input class="w-100 formSpacing" type="email" name="email" placeholder="Username">
+                <br><label for="password">Password</label>
+                <br><input class="w-100 formSpacing" type="password" name="password" placeholder="Password">
                 <?php
                 if(!empty($error)) {
                     echo '<p style="color:red;">' 
@@ -48,11 +49,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                     '</p>';
                 }
                 ?>
-                <button>Login</button>
+                <br><button class="btn btn-primary w-100">Login</button>
                 <p><a style="text-decoration:none;" href="forgotPassword.php">Forgot your password?</a></p>
             </form>
-        </div>
+            </div>
     </div>
+</div>
 
     <?php 
     require_once "include/footer.php";?>

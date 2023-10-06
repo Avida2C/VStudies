@@ -1,5 +1,5 @@
 <footer>
-    <p>VStudies &copy; <?php echo date("Y") ?></p>
+    <p class="bg-light p-3 text-center">VStudies &copy; <?php echo date("Y") ?></p>
 </footer>
 <!-- JavaScript linked-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

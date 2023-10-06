@@ -3,7 +3,6 @@ require "functions.php";
 
 ?>
 
-<body class="bodyStyle">
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
@@ -19,8 +18,5 @@ require "functions.php";
     </div>
 
     <?php 
-    require_once "include/footer.php";
-    require "include/scripts.php"; ?>
-</body>
+    require_once "include/footer.php";?>
 
-</html>

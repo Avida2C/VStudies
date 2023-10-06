@@ -4,7 +4,6 @@ require "functions.php";
 check_login();
 ?>
 
-<body class="bodyStyle">
     <?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
@@ -560,8 +559,4 @@ check_login();
 
 
     <?php 
-    require_once "include/footer.php";
-    require "include/scripts.php"; ?>
-</body>
-
-</html>
+    require_once "include/footer.php";?>

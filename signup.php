@@ -71,7 +71,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 <label for="password">Password</label>
                 <input id="signupPassword" type="password" name="password" placeholder="Password">
-                <p>Password must be alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+                <p>Password must be alphanumeric (symbols such as: -@~`!@#$%^&*()_+={}|\:;"'<,>.? are also allowed) and be 8 - 20 characters
+                </p>
                 
                 <button class="mt-3">Sign Up!</button>
                 <?php 

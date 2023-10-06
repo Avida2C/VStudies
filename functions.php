@@ -11,7 +11,7 @@ function check_login()
 }
 $pattern ['username']='/^[a-z\d]{5,12}$/i';
 $pattern ['email']='/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,4})(\.[a-z]{2,4})?$/';
-$pattern ['password']='/^[\w@-]{8,20}$/';
+$pattern ['password']='/^[-@\w~`!@#$%^&*()_+={}|\:;"\'<,\>.?]{8,20}$/';
 
 
 /*PHPMailer:

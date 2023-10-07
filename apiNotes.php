@@ -66,56 +66,58 @@ check_login();
                 <li>Webhook</li>
             </ul>
             <h4>Terminology</h4>
-            <table>
-                <tr>
-                    <td>
-                        API
-                    </td>
-                    <td>for the purpose of this website, these are remote APIs, i.e. APIs delivered over the network.
-                        Often times, it refers to RESTful APIs over HTTP with JSON, as it is most common.</td>
-                </tr>
-                <tr>
-                    <td>
-                        Library
-                    </td>
-                    <td>a collection of non-volatile resources (usually specific to a computer language) that is
-                        used to develop more complex software in that language.</td>
-                </tr>
-                <tr>
-                    <td>
-                        Client
-                    </td>
-                    <td>
-                        The software that are consumers of the APIs.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Services
-                    </td>
-                    <td>
-                        This refers to the the software that resides on the servers that provides the API to the
-                        services.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Server
-                    </td>
-                    <td>
-                        This refers to the physical machines.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        API Provider
-                    </td>
-                    <td>
-                        the company or organization that provides a set of API for other developers.
-                    </td>
-                </tr>
-
-            </table>
+            <div class="col">
+                <table class="table table-striped-columns table-hover table-bordered">
+                    <tr>
+                        <td>
+                            API
+                        </td>
+                        <td>for the purpose of this website, these are remote APIs, i.e. APIs delivered over the
+                            network.
+                            Often times, it refers to RESTful APIs over HTTP with JSON, as it is most common.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Library
+                        </td>
+                        <td>a collection of non-volatile resources (usually specific to a computer language) that is
+                            used to develop more complex software in that language.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Client
+                        </td>
+                        <td>
+                            The software that are consumers of the APIs.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Services
+                        </td>
+                        <td>
+                            This refers to the the software that resides on the servers that provides the API to the
+                            services.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Server
+                        </td>
+                        <td>
+                            This refers to the physical machines.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            API Provider
+                        </td>
+                        <td>
+                            the company or organization that provides a set of API for other developers.
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <h4>PHP Frameworks can often used to create APIs:</h4>
             <p> Common frameworks incude: </p>
             <ul>
@@ -126,5 +128,5 @@ check_login();
     </div>
 </div>
 
-    <?php 
+<?php 
     require_once "include/footer.php";?>

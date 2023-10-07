@@ -13,7 +13,6 @@ $pattern ['username']='/^[a-z\d]{5,12}$/i';
 $pattern ['email']='/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,4})(\.[a-z]{2,4})?$/';
 $pattern ['password']='/^[-@\w~`!@#$%^&*()_+={}|\:;"\'<,\>.?]{8,20}$/';
 
-
 /*PHPMailer:
 Import PHPMailer classes into the global namespace
 These must be at the top of your script, not inside a function */

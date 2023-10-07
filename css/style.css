@@ -1,18 +1,19 @@
+* {
+    line-height: 24px !important;
+    font-size: 16px !important;
+}
+
 body {
     overflow: scroll;
     overflow-y: scroll;
     overflow-x: auto;
 }
 
-
-
-
 /* Class Types */
-div .calculator {
+.calculator {
     width: 350px;
     padding: 0.5em;
     background-color: #BCEAFF;
-
 }
 
 .calculator button {
@@ -21,7 +22,6 @@ div .calculator {
     background-color: rgb(26, 26, 26);
     color: rgb(255, 255, 255);
     border: 0.1em solid;
-
 }
 
 .calculator .calculatorInput {
@@ -46,11 +46,6 @@ div .calculator {
     width: 26%;
 
 }
-
-
-
-
-
 
 
 .valid {

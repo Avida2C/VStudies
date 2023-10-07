@@ -25,9 +25,9 @@ check_login();
 
             <h4 class="mt-4">Notes </h4>
             <h5>Examples: </h5>
-            <div class="row overflow-y-scroll" style="height: 400px;">
-                <div class="col">
-                    <table>
+            <div class="row">
+                <div class="col mb-5 overflow-y-scroll" style="height:400px;">
+                    <table class="table table-striped-columns table-hover table-bordered">
                         <tr>
                             <th>Regular Expression</th>
                             <th>Match</th>
@@ -237,10 +237,10 @@ check_login();
             </div>
 
 
-            <h3 class="mt-4">MetaCharacters</h3>
+            <h3>MetaCharacters</h3>
             <div class="row">
-                <div class="col">
-                    <table>
+                <div class="col mb-5">
+                    <table class="table table-striped-columns table-hover table-bordered">
                         <tr>
                             <th>Metacharacters</th>
                             <th>Definition</th>
@@ -277,10 +277,10 @@ check_login();
                 </div>
             </div>
 
-            <h3 class="mt-4">Special Characters</h3>
+            <h3>Special Characters</h3>
             <div class="row">
-                <div class="col">
-                    <table>
+                <div class="col mb-5">
+                    <table class="table table-striped-columns table-hover table-bordered">
                         <tr>
                             <th>Character</th>
                             <th>Definition</th>
@@ -321,7 +321,7 @@ check_login();
 
             <div class="row">
                 <div class="col">
-                    <form class="form-control mt-4">
+                    <form class="form-control p-5">
                         <h5>New User Signup</h5>
                         <input type="text" name="username" placeholder="username">
                         <p>Username must be and contain 5 - 12 characters</p>
@@ -345,8 +345,8 @@ check_login();
     </div>
 </div>
 
+<script src="Javascript/validation.js"></script>
 
 <?php 
     require_once "include/footer.php";?>
 
-<script src="Javascript/validation.js"></script>

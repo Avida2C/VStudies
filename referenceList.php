@@ -10,15 +10,10 @@ check_login();
 <div class="container d-flex justify-content-center p-5 col-md-8">
     <div class="row">
         <div class="col">
-
             <h3>Reference list</h3>
             <h4> Operations </h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Description</th>
-                    </tr>
+            <div class="col mb-5 overflow-y-scroll" style="height:400px;">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>+</td>
                         <td>Addition</td>
@@ -115,12 +110,8 @@ check_login();
             <h4>
                 String Escape Characters
             </h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Character</th>
-                        <th>Description</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>\'</td>
                         <td>single Quote</td>
@@ -157,12 +148,8 @@ check_login();
             </div>
             <!------------------------ CHARACTER ENTITIES ------------------------>
             <h3>Operations (Other)</h3>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Reference</th>
-                        <th>Definition</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>==</td>
                         <td>will check the value of the variables</td>
@@ -185,12 +172,8 @@ check_login();
             <!------------------------------------->
 
             <h4>Value Types</h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Reference</th>
-                        <th>Definition</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>var</td>
                         <td>can be used throughout the program</td>
@@ -222,15 +205,9 @@ check_login();
 
             <!------------------------------------------------------------------------------->
 
-            <h4>
-                Character Entities
-            </h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Result</th>
-                        <th>Entity Name</th>
-                    </tr>
+            <h4>Character Entities</h4>
+            <div class="col mb-5 overflow-y-scroll" style="height:400px;">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>&amp;</td>
                         <td>&amp;amp;</td>
@@ -310,12 +287,8 @@ check_login();
             <h4>
                 String Methods
             </h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Input</th>
-                        <th>Entity Name</th>
-                    </tr>
+            <div class="col mb-5 overflow-y-scroll" style="height:400px;">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>charAt()</td>
                         <td>Returns the character at a specified index (position)</td>
@@ -445,12 +418,8 @@ check_login();
 
 
             <h4>HTML References</h4>
-            <div class="tableStyle" style="height:100px;">
-                <table>
-                    <tr>
-                        <th>Reference</th>
-                        <th>Definition</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>favicon</td>
                         <td>An image which is displayed to the left of the page title in the browser tab</td>
@@ -459,12 +428,8 @@ check_login();
             </div>
 
             <h4>PHP - SuperGlobal Variables</h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Definition</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>$GLOBALS</td>
                         <td>used to access global variables from anywhere in the PHP script.</td>
@@ -506,12 +471,8 @@ check_login();
             </div>
 
             <h4>PHP - Useful References</h4>
-            <div class="tableStyle" style="height:100px;">
-                <table>
-                    <tr>
-                        <th>Code</th>
-                        <th>Definition</th>
-                    </tr>
+            <div class="col mb-5">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>implode()</td>
                         <td>Converts data to string</td>
@@ -520,12 +481,8 @@ check_login();
             </div>
 
             <h4>RegEx MetaCharacters</h4>
-            <div class="tableStyle">
-                <table>
-                    <tr>
-                        <th> Metacharacter </th>
-                        <th> Definition </th>
-                    </tr>
+            <div class="col">
+                <table class="table table-striped-columns table-hover table-bordered">
                     <tr>
                         <td>\d</td>
                         <td>match any digit character similar to [0-9]</td>

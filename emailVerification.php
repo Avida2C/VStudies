@@ -1,11 +1,9 @@
 <?php
 require "functions.php";
  
-
 $email = $_GET["email"];
 
 $now = new DateTime();
-
 
 $sql = "SELECT * FROM users WHERE email = '$email'";
 $result  = mysqli_query($con, $sql);
@@ -22,11 +20,9 @@ if (isset($_POST["verify_email"])) {
 
     }
     elseif($now >= $expireDate) {
-        $result2 = "Verification code expired.";
-        
+        $result2 = "Verification code expired.";  
     }
     else{
-
          // mark email as verified
         $sql = "UPDATE users SET verified = true WHERE email = '$email' AND verification_code = '$verification_code'";
         $result  = mysqli_query($con, $sql);
@@ -44,27 +40,26 @@ else if(isset($_POST["resend_verification"])) {
 }
 ?>
 
-    <?php require_once 'include/header.php';
+<?php require_once 'include/header.php';
     require_once 'include/navbar.php';?>
 
-    <div class="wrapper" style="height: 100%;">
-        <div class="pb-5" style="justify-content: center;">
-            <form id="signupForm" class="loginStyle py-5" method="post">
-                <input type="text" name="verification_code" placeholder="Enter verification code" />
+<div class="container col-md-8 my-4 text-center">
+    <div class="row">
+        <div class="col">
+            <form id="signupForm" class="form-control py-3" method="post">
+                <input type="text" name="verification_code" style="width:270px;" class="p-1 my-2"
+                    placeholder="Enter verification code" />
+                <br>
+                <button class="btn btn-primary" name="verify_email">Verify Email </button>
 
-                <button class="w-100 mt-2 mb-4" name="verify_email">Verify Email </button>
-
-                <button class="w-100 mb-4" name="resend_verification">Resend Verification</button>
+                <button class="btn btn-primary" name="resend_verification">Resend Verification</button>
                 <p><?php echo $result2 ?></p>
-
             </form>
-
         </div>
     </div>
+</div>
 
-    <?php 
+<?php 
     require_once "include/footer.php";?>
 
-    <script src="Javascript/validation.js"></script>
-
-
+<script src="Javascript/validation.js"></script>

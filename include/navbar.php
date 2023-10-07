@@ -23,10 +23,7 @@
             <?php if(empty($_SESSION['USER'])) :
                 ?>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="signup.php">Signup</a>
+                <a class="nav-link active" aria-current="page" href="login.php">My Account</a>
             </li>
             <?php else: ?>
             <li class="nav-item">

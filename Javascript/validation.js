@@ -52,9 +52,8 @@ $('#signupForm').on('submit', function () {
     var emailValid = validate($('#signupEmail')[0], patterns.email);
     var nameValid = validate($('#signupName')[0], patterns.username);
     var passwordValid = validate($('#signupPassword')[0], patterns.password);
-    
-    if(emailValid && nameValid && passwordValid)
-    {
+
+    if (emailValid && nameValid && passwordValid) {
         return true;
     }
     return false;

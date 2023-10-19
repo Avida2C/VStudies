@@ -462,7 +462,6 @@ check_login();
                     <?php $numbers[0] = 100; 
                     echo $numbers[0]; 
                     ?>
-
                 </p>
 
                 <p>
@@ -493,21 +492,19 @@ check_login();
                     <br>
                     <?php $numbers[2] = "update"; ?>
                     <?php print_r($numbers); ?>
-
                 </p>
 
                 <p>
                     Calculating the amount of values in an array:
                     <br>
                     <?php echo "<p> Number of elements in our array: " . count($numbers). "</p>" ?>
-
                 </p>
 
                 <p>
                     Resetting the position of the array:
                     <br>
                     Moves array pointer to the start and return value
-<br>
+                    <br>
                     <?php $first = reset($numbers);
                     echo "<p> RESET: {$first}. </p>" ?>
                     <br>
@@ -515,7 +512,41 @@ check_login();
                     <br>
                     <?php $next = next($numbers);
                     echo "<p> NEXT: {$next}. </p>" ?>
+                </p>
 
+                <p>
+                    Adding Multiple of values to an array:
+                    <br>
+                    <?php array_push($numbers, 10, 20, 30);
+                    print_r($numbers);
+                    ?>
+                </p>
+
+                <p>
+                    Poping out values out of an array:
+                    <br>
+                    <?php 
+                    $pop = array_pop($numbers);
+                    echo "<p> POP: {$pop} </p>";
+                    print_r($numbers);
+                    ?>
+                    <br>
+                </p>
+
+                <p>
+                    Shifting numbers <br>
+                    <br> Removes the value in the 1st position, while moving the other value positions to the start
+                    <?php $shift = array_shift($numbers);
+                    print_r($numbers);?>
+                    <br>
+                    <?php echo $shift; ?>
+                    <br>
+                    UnShifting numbers <br>
+                    <br> Adds the value in the 1st position while moving the other value positions backwards
+                    <br>
+                    <?php $shift = array_unshift($numbers, 150);
+                    print_r($numbers);?>
+                    <br>
                 </p>
 
                 <h4>Conditions and Control Structures</h4>
@@ -654,7 +685,8 @@ check_login();
                             <br> }?>
                     </p>
                 </div>
-                <p>var is = 0, condition = if the var is not 100, do = var ++ (add +1 to var) and run the code in the
+                <p>var is = 0, condition = if the var is not 100, do = var ++ (add +1 to var) and run the code in
+                    the
                     loop
                 </p>
                 <p>echo i : shows the number in the var i</p>
@@ -875,7 +907,8 @@ check_login();
                         </tr>
                     </table>
                 </div>
-                <p class="mt-3"> Post (will submit data but won't be visible) or Get (submit the data where it can be
+                <p class="mt-3"> Post (will submit data but won't be visible) or Get (submit the data where it can
+                    be
                     seen) method
                     <br> If the data is going to remain on the same page:
                     <br> &lt;form action ="<\?php echo $_SERVER["PHP_SELF"];?>" instead of "folder/file.php"

@@ -477,6 +477,14 @@ check_login();
                         <td>implode()</td>
                         <td>Converts data to string</td>
                     </tr>
+                    <tr>
+                        <td>
+                            print_r
+                        </td>
+                        <td>
+                            is used to display arrays and global variables.
+                        </td>
+                    </tr>
                 </table>
             </div>
 

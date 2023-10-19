@@ -327,6 +327,7 @@ check_login();
                     </table>
                 </div>
 
+
                 <h4>Comparison Operators</h4>
                 <div class="col mb-5 overflow-y-scroll" style="height:400px;">
                     <table class="table table-striped-columns table-hover table-bordered">
@@ -419,6 +420,102 @@ check_login();
                     <br> $a = "My name ";
                     <br> $b = $a . "is Nadine!";
                     <br>
+                </p>
+
+                <h4>Incremation and Arrays</h4>
+                <p>
+                    <?php $numbers=[0,1,2,3,4,5]; ?>
+
+                    $array = [0,1,2,3,4,5];
+                    <br>
+                    $array = array(0,1,2,3,4,5);
+                    <br>
+                    Arrays can be written differently but display the same thing.
+                    <br>
+                    Arrays can be displayed using print_r
+                    <br>
+                    <?php print_r($numbers); ?>
+                    <br>
+                    <br>
+                    echo 'text' . $array[0];
+                    <br>
+                    result:
+                    <br>
+                    <?php echo "text is " . $numbers[0]; ?>
+
+
+                    <br> echo "text is {$array[0]}."; are the same.
+                    <br>result:
+                    <br>
+                    <?php echo "text is {$numbers[0]}"?>
+                    <br>
+
+                </p>
+
+                <p>
+                    To modify an input into the array:
+                    $array[0] = 100; [0] represents the position inside the array. Arrays start from 0, therefore, the
+                    first number is always represented as 0, while the seoncd number is 1.
+                    <br>
+                    result:
+                    <br>
+                    <?php $numbers[0] = 100; 
+                    echo $numbers[0]; 
+                    ?>
+
+                </p>
+
+                <p>
+                    You can add more inputs into an array by:
+                    <br>
+                    <?php $numbers[] = "text"?>
+                    $array[] = "text";
+                    <br>
+                    This will simply add text into a new porition of the Array.
+                    <br>
+                    result:
+                    <br>
+                    <?php print_r($numbers); ?>
+                </p>
+
+                <p>
+                    Removing an value from the value, unset.
+                    <br>
+                    unset($numbers[3]);
+                    <?php unset($numbers[2]); ?>
+                    <br>
+                    This removes the input of that position, therefore the 3rd position is no longer visible due to be
+                    being an empty position.
+                    <br>
+                    <?php print_r($numbers); ?>
+                    <br>
+                    When updating the empty position, the value will be visible after the previously inputted values.
+                    <br>
+                    <?php $numbers[2] = "update"; ?>
+                    <?php print_r($numbers); ?>
+
+                </p>
+
+                <p>
+                    Calculating the amount of values in an array:
+                    <br>
+                    <?php echo "<p> Number of elements in our array: " . count($numbers). "</p>" ?>
+
+                </p>
+
+                <p>
+                    Resetting the position of the array:
+                    <br>
+                    Moves array pointer to the start and return value
+<br>
+                    <?php $first = reset($numbers);
+                    echo "<p> RESET: {$first}. </p>" ?>
+                    <br>
+                    Moves array pointer to the next position and returns value
+                    <br>
+                    <?php $next = next($numbers);
+                    echo "<p> NEXT: {$next}. </p>" ?>
+
                 </p>
 
                 <h4>Conditions and Control Structures</h4>

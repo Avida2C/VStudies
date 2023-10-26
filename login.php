@@ -1,5 +1,6 @@
 <?php
 require "functions.php";
+require_once 'include/header.php';
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = htmlspecialchars(addslashes($_POST['email'])); // 'addslashes' allows the user to use brackets
@@ -80,8 +81,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
 ?>
 
-<?php require_once 'include/header.php';
-    require_once 'include/navbar.php';?>
+<?php require_once 'include/navbar.php';?>
 
 <div class="container col-md-8 my-4">
     <div class="row">

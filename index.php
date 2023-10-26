@@ -1,10 +1,9 @@
 <?php
 require "functions.php";
-
+require_once 'include/header.php';
 ?>
 
-<?php require_once 'include/header.php';
-    require_once 'include/navbar.php';?>
+<?php require_once 'include/navbar.php';?>
 
 <div class="container d-flex justify-content-center p-5 col-md-8 text-center">
     <div class="row">

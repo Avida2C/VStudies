@@ -1,5 +1,6 @@
 <?php
 require "functions.php";
+require_once 'include/header.php';
  
 $email = $_GET["email"];
 
@@ -40,8 +41,7 @@ else if(isset($_POST["resend_verification"])) {
 }
 ?>
 
-<?php require_once 'include/header.php';
-    require_once 'include/navbar.php';?>
+<?php require_once 'include/navbar.php';?>
 
 <div class="container col-md-8 my-4 text-center">
     <div class="row">

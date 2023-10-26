@@ -1,12 +1,11 @@
 <?php
 require "functions.php";
+require_once 'include/header.php';
 
 check_login();
 ?>
 
-<?php
-    require_once 'include/header.php';
-    require_once 'include/navbar.php';
+<?php require_once 'include/navbar.php';
 ?>
 
 <div class="container col-md-8 d-flex justify-content-center p-5">

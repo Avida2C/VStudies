@@ -549,6 +549,51 @@ check_login();
                     <br>
                 </p>
 
+                <p>Associative Array
+                    <br>
+                    <?php 
+                        $students = [
+                            // Key value pair
+                           "Interactive Media" => 16,
+                           "Game Art" => 12
+                        ]; 
+
+                        print_r($students);
+                        
+                        echo "<br><p> There are {$students['Interactive Media']} students in Interactive Media. </p>";
+                        echo "<br><p> There are {$students['Game Art']} students in Game Art. </p>";
+
+                        $students ["Graphic Design"] = 5;
+
+                        echo "<br><p> There are {$students['Graphic Design']} students in Game Art. </p>";
+
+                        if (array_key_exists("asdf", $students)) {
+                            echo "<p> asdf found. </p>";
+
+                        }
+                        else
+                        {
+                            echo "<p> asdf is not found. </p>";
+                        }
+
+                        $keys = array_keys($students);
+                        print_r($keys);
+
+                        ?>
+
+                </p>
+
+                <p>
+                    <?php  $fruits = "apple, orange, kiwi";
+                    $fruit_list = explode(",", $fruits);
+                    print_r($fruit_list);
+
+                    $name_list = ["Joey", "Mary", "Steven"];
+                    $names = implode(", ", $name_list);
+                    echo "<br>" . $names;
+                    ?>
+                </p>
+
                 <h4>Conditions and Control Structures</h4>
                 <p>
                     $a = 2;

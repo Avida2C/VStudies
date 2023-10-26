@@ -760,6 +760,43 @@ check_login();
                             <br> }?>
                     </p>
                 </div>
+
+
+
+
+                <!-- EXAMPLE --->
+                <h5>Consoles Array & Loop Example</h5>
+                <?php
+                $products = ["Nintendo Switch", "PS5", "Steam Deck"];
+                print_r($products);
+                echo "<ul>";
+                for($i = 0; $i < count($products); $i++)
+                {
+                    echo "<li>{$products[$i]}</li>";
+                }
+                            echo "</ul>";
+                foreach($products as $product)
+                {
+                    echo "<p>{$product} </p>";
+                }
+                ?>
+
+                <!-- EXAMPLE -->
+                <h5>Heroes Examples</h5>
+               <?php
+                $heroes = [
+                    "Tony Stark" => "Iron Man", 
+                    "Bruce Banner" => "The Hulk",
+                    "Steve Rogers" => "Captian America"
+                ];
+
+                //Temporary key-value pair to access each data
+                foreach ($heroes as $name => $hero)
+                {
+                    echo "<p> {$name} is known as {$hero}. </p>";
+                }
+                ?>
+
                 <!----------EXAMPLE ----------------->
                 <h5>For Each Loop</h5>
 

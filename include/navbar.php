@@ -14,20 +14,13 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-menu-light">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+                    <?php if(empty($_SESSION['USER'])) :
+                        ?>
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.php">Login</a>
+                    </li>
+                    <?php else: ?>
+                        <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="javascriptNotes.php">Javascript</a>
                     </li>
                     <li class="nav-item">
@@ -41,12 +34,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
                     </li>
-                    <?php if(empty($_SESSION['USER'])) :
-                        ?>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login.php">My Account</a>
-                    </li>
-                    <?php else: ?>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
                     </li>
@@ -57,4 +44,7 @@
                 </ul>
             </div>
         </div>
+
+
+        
 </nav>

@@ -783,7 +783,7 @@ check_login();
 
                 <!-- EXAMPLE -->
                 <h5>Heroes Examples</h5>
-               <?php
+                <?php
                 $heroes = [
                     "Tony Stark" => "Iron Man", 
                     "Bruce Banner" => "The Hulk",

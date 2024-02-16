@@ -6,15 +6,36 @@ check_login();
 ?>
 
 <?php require_once 'include/navbar.php';?>
-
-<div class="container d-flex justify-content-center p-5 col-md-8">
+<div class="container d-flex justify-content-center py-4 col-md-12">
     <div class="row">
         <div class="col">
-            <h3>API - Application Programming Interface </h3>
+            <h1>API - Application Programming Interface </h1>
+        </div>
+    </div>
+</div>
+<div class="container d-flex justify-content-center col-md-8">
+    <div class="row">
+        <div class="col-8">
+            APIs are how software components interact. APIs are the messenger between different applications
+            and services. They are the messenger between the backend and frontend of an application.
+            <br>
+            <br>
+            <p>API stands for Application Programming Interface. It is a set of clearly defined methods of
+                communication between various software components. A REST API is an API that uses HTTP requests to GET,
+                POST, PUT and DELETE data. APIs are used by developers to interact with an application or
+                service. For example, if you wanted to look at Google Maps, you would access their APIs.
+            </p>
+            <br>
+            <p>APIs are like an address - they tell you where you can find something. For example, if you wanted to
+                look at Google Maps, you would access their APIs. APIs are like an address - they tell you where you can
+                find something. For example, if you wanted to look at Google Maps, you would access their APIs.
+            </p>
             <p>It is basically how different machines and software talk to each other to create ever more complex
                 applications. Even though APIs can simply refer to an interface to a local library, or the libraries
                 themselves. For purposes of this website, APIs are assumed to be over the network to connect clients and
                 servers (or multiple servers depending on your architecture and terminology).</p>
+            <br>
+
 
             <h4>Why build APIs?</h4>
             <p>
@@ -124,6 +145,169 @@ check_login();
                 <li>Laravel framework</li>
                 <li>CodeIgniter</li>
             </ul>
+        </div>
+        <div class="col-12">
+            <table>
+                <ul>
+                    <li>
+                        <h4>HTTP_Response Code</h4>
+                        <p>The HTTP response code is a three-digit integer code returned by an HTTP server to a client.
+                            It indicates whether a specific HTTP request has been successfully completed.
+                            The first digit of the status code specifies the general class of response.
+                            The code in the second digit specifies the status of that class.
+                            The code in the third digit may provide further information about the status of the
+                            response.
+                        </p>
+                        <table class="w-75">
+                            <tr>
+                                <th>
+                                    <h4>HTTP_Response Code</h4>
+                                </th>
+                                <th>
+                                    <h4>Description</h4>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>200</p>
+                                </td>
+                                <td>
+                                    <p>The request has succeeded.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>300</p>
+                                </td>
+                                <td>
+                                    <p>The request has succeeded and a new resource has been created as a result.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>400</p>
+                                </td>
+                                <td>
+                                    <p>Bad Request</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>401</p>
+                                </td>
+                                <td>
+                                    <p>Unauthorized</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>403</p>
+                                </td>
+                                <td>
+                                    <p>Forbidden</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>404</p>
+                                </td>
+                                <td>
+                                    <p>Not Found</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>422</p>
+                                </td>
+                                <td>
+                                    <p>Unprocessable Entity</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </table>
+        </div>
+    </div>
+
+        <div class="col-md-4">
+            <h4>API Endpoints</h4>
+            <p>Endpoints are the URLs that are used to access the data and services provided by an API.
+                The URLs that are used to access the data and services provided by an API are called endpoints.
+                An endpoint is a URL that is used to access the data and services provided by an API.
+            </p>
+            <p>Example:</p>
+            <p>https://api.example.com/users</p>
+            <p>https://api.example.com/users/1</p>
+
+            <h4>API Documentation</h4>
+            <p>API documentation is a set of technical writing that describes how to use an API.
+                It includes information about the endpoints, the methods available, the parameters required,
+                and the response format.
+            </p>
+
+            <h4>API Testing</h4>
+            <p>API testing is the process of testing APIs to ensure that they meet the requirements and perform as
+                expected.
+                API testing involves sending various requests to the API and verifying the response.
+                API testing is important because it helps identify issues early in the development process,
+                which can save time and resources.
+            </p>
+            <h3> Tools </h3>
+            <p>There are many tools available for API testing, including Postman, Insomnia, and REST Client.
+                Each tool has its own unique features and functionality, making it difficult to choose the best tool for
+                your needs.
+                To help you choose the right tool for API testing, we have compiled a list of the top 3 tools for API
+                testing.
+            </p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.guru99.com/images/postman.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Postman</h5>
+                            <p class="card-text">Postman is a popular tool for API testing because it is easy to use and
+                                has a user-friendly interface.
+                                It supports multiple protocols, such as HTTP, HTTPS, and WebSocket, making it a
+                                versatile tool for API testing.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.guru99.com/images/insomnia.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Insomnia</h5>
+                            <p class="card-text">Insomnia is another popular tool for API testing because it is easy
+                                to use and has a user-friendly interface.
+                                It supports multiple protocols, such as HTTP, HTTPS, and WebSocket, making it a
+                                versatile tool for API testing.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.guru99.com/images/soapui.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">SoapUI</h5>
+                            <p class="card-text">SoapUI is a popular tool for API testing because it is easy to use
+                                and has a user-friendly interface.
+                                It supports multiple protocols, such as HTTP, HTTPS, and WebSocket, making it a
+                                versatile tool for API testing.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.guru99.com/images/httpie.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Httpie</h5>
+                            <p class="card-text">httpie is a command-line tool for making HTTP requests. It is easy
+                                to use and has a user-friendly interface, making it a great choice for API testing.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

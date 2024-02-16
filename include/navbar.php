@@ -20,7 +20,7 @@
                         <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                     </li>
                     <?php else: ?>
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="javascriptNotes.php">Javascript</a>
                     </li>
                     <li class="nav-item">
@@ -35,16 +35,11 @@
                         <a class="nav-link active" aria-current="page" href="referenceList.php">References</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
                     </li>
                     <?php endif; ?>
                 </ul>
             </div>
         </div>
-
-
-        
+    </div>
 </nav>
